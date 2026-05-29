@@ -70,6 +70,12 @@ def parse_and_commit(filepath: Path, amc_key: str):
         log.error(f"Parse error: {e}")
         return
 
+    # Drop schemes with no scheme_code (fund not in our universe)
+    result["schemes"] = [s for s in result.get("schemes", []) if s.get("scheme_code")]
+    if not result["schemes"]:
+        log.info(f"Skipped {filepath.name} — no schemes in universe (scheme_code not mapped).")
+        return
+
     import json
     out_path = REPO_DIR / "data" / f"{amc_key}.json"
     out_path.write_text(json.dumps(result, indent=2, ensure_ascii=False))
