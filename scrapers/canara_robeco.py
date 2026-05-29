@@ -71,9 +71,7 @@ def _parse_sheet(ws, scheme_code: Optional[str] = None) -> dict:
         mkt_val  = safe_float(cells[5]) if len(cells) > 5 else None
         pct_nav  = safe_float(cells[6]) if len(cells) > 6 else None
 
-        # Already in percentage form (6.89, not 0.0689)
-        if pct_nav is not None and pct_nav < 1.0:
-            pct_nav = round(pct_nav * 100, 4)
+        # Already in percentage form (6.89 = 6.89%, not 0.0689)
 
         holdings.append({
             "isin":              isin,

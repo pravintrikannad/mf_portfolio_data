@@ -285,7 +285,7 @@
           "sector": "Chemicals & Petrochemicals",
           "quantity": 37205.0,
           "market_value_lakh": 5744.08,
-          "pct_nav": 99.0
+          "pct_nav": 0.99
         },
         {
           "isin": "INE765G01017",
@@ -293,7 +293,7 @@
           "sector": "Insurance",
           "quantity": 323618.0,
           "market_value_lakh": 5706.03,
-          "pct_nav": 98.0
+          "pct_nav": 0.98
         },
         {
           "isin": "INE134E01011",
@@ -301,7 +301,7 @@
           "sector": "Finance",
           "quantity": 1271059.0,
           "market_value_lakh": 5699.43,
-          "pct_nav": 98.0
+          "pct_nav": 0.98
         },
         {
           "isin": "INE967H01025",
@@ -309,7 +309,7 @@
           "sector": "Healthcare Services",
           "quantity": 853267.0,
           "market_value_lakh": 5688.73,
-          "pct_nav": 98.0
+          "pct_nav": 0.98
         },
         {
           "isin": "INE121A01024",
@@ -317,7 +317,7 @@
           "sector": "Finance",
           "quantity": 363840.0,
           "market_value_lakh": 5686.46,
-          "pct_nav": 98.0
+          "pct_nav": 0.98
         },
         {
           "isin": "INE474Q01031",
@@ -325,7 +325,7 @@
           "sector": "Healthcare Services",
           "quantity": 507325.0,
           "market_value_lakh": 5668.09,
-          "pct_nav": 98.0
+          "pct_nav": 0.98
         },
         {
           "isin": "INE262H01021",
@@ -333,7 +333,7 @@
           "sector": "IT - Software",
           "quantity": 113577.0,
           "market_value_lakh": 5451.7,
-          "pct_nav": 94.0
+          "pct_nav": 0.94
         },
         {
           "isin": "INE208A01029",
@@ -341,7 +341,7 @@
           "sector": "Agricultural, Commercial & Construction Vehicles",
           "quantity": 3351332.0,
           "market_value_lakh": 5432.17,
-          "pct_nav": 94.0
+          "pct_nav": 0.94
         },
         {
           "isin": "INE647A01010",
@@ -349,7 +349,7 @@
           "sector": "Chemicals & Petrochemicals",
           "quantity": 215134.0,
           "market_value_lakh": 5418.36,
-          "pct_nav": 94.0
+          "pct_nav": 0.94
         },
         {
           "isin": "INE0CZ201020",
@@ -357,7 +357,7 @@
           "sector": "Pharmaceuticals & Biotechnology",
           "quantity": 712690.0,
           "market_value_lakh": 5417.16,
-          "pct_nav": 94.0
+          "pct_nav": 0.94
         },
         {
           "isin": "INE321T01012",
@@ -365,7 +365,7 @@
           "sector": "Household Products",
           "quantity": 234276.0,
           "market_value_lakh": 5367.73,
-          "pct_nav": 93.0
+          "pct_nav": 0.93
         },
         {
           "isin": "INE467B01029",
@@ -373,7 +373,7 @@
           "sector": "IT - Software",
           "quantity": 216125.0,
           "market_value_lakh": 5346.72,
-          "pct_nav": 92.0
+          "pct_nav": 0.92
         },
         {
           "isin": "INE101A01026",
@@ -381,7 +381,7 @@
           "sector": "Automobiles",
           "quantity": 168791.0,
           "market_value_lakh": 5228.3,
-          "pct_nav": 90.0
+          "pct_nav": 0.9
         },
         {
           "isin": "INE791I01019",
@@ -389,7 +389,7 @@
           "sector": "Realty",
           "quantity": 644023.0,
           "market_value_lakh": 5087.78,
-          "pct_nav": 88.0
+          "pct_nav": 0.88
         },
         {
           "isin": "INE324D01010",
@@ -397,7 +397,7 @@
           "sector": "Consumer Durables",
           "quantity": 313748.0,
           "market_value_lakh": 4998.01,
-          "pct_nav": 86.0
+          "pct_nav": 0.86
         },
         {
           "isin": "INE864I01014",
@@ -405,7 +405,7 @@
           "sector": "Electrical Equipment",
           "quantity": 73880.0,
           "market_value_lakh": 4770.51,
-          "pct_nav": 82.0
+          "pct_nav": 0.82
         },
         {
           "isin": "INE200A01026",
@@ -413,7 +413,7 @@
           "sector": "Electrical Equipment",
           "quantity": 106660.0,
           "market_value_lakh": 4763.65,
-          "pct_nav": 82.0
+          "pct_nav": 0.82
         },
         {
           "isin": "INE066A01021",
@@ -421,7 +421,7 @@
           "sector": "Automobiles",
           "quantity": 63778.0,
           "market_value_lakh": 4533.98,
-          "pct_nav": 78.0
+          "pct_nav": 0.78
         },
         {
           "isin": "INE237A01036",
@@ -429,7 +429,7 @@
           "sector": "Banks",
           "quantity": 1170562.0,
           "market_value_lakh": 4486.76,
-          "pct_nav": 77.0
+          "pct_nav": 0.77
         },
         {
           "isin": "INE0W2G01015",
@@ -437,7 +437,7 @@
           "sector": "IT - Services",
           "quantity": 10407932.0,
           "market_value_lakh": 4344.27,
-          "pct_nav": 75.0
+          "pct_nav": 0.75
         },
         {
           "isin": "INE414G01012",
@@ -445,7 +445,7 @@
           "sector": "Finance",
           "quantity": 123371.0,
           "market_value_lakh": 4224.47,
-          "pct_nav": 73.0
+          "pct_nav": 0.73
         },
         {
           "isin": "INE660A01013",
@@ -453,7 +453,7 @@
           "sector": "Finance",
           "quantity": 89420.0,
           "market_value_lakh": 4055.02,
-          "pct_nav": 70.0
+          "pct_nav": 0.7
         },
         {
           "isin": "INE048G01026",
@@ -461,7 +461,7 @@
           "sector": "Chemicals & Petrochemicals",
           "quantity": 59020.0,
           "market_value_lakh": 4025.75,
-          "pct_nav": 69.0
+          "pct_nav": 0.69
         },
         {
           "isin": "INE133A01011",
@@ -469,7 +469,7 @@
           "sector": "Consumer Durables",
           "quantity": 132173.0,
           "market_value_lakh": 3900.03,
-          "pct_nav": 67.0
+          "pct_nav": 0.67
         },
         {
           "isin": "INE794A01010",
@@ -477,7 +477,7 @@
           "sector": "Pharmaceuticals & Biotechnology",
           "quantity": 25605.0,
           "market_value_lakh": 3841.52,
-          "pct_nav": 66.0
+          "pct_nav": 0.66
         },
         {
           "isin": "INE585B01010",
@@ -485,7 +485,7 @@
           "sector": "Automobiles",
           "quantity": 28130.0,
           "market_value_lakh": 3745.23,
-          "pct_nav": 65.0
+          "pct_nav": 0.65
         },
         {
           "isin": "INE795G01014",
@@ -493,7 +493,7 @@
           "sector": "Insurance",
           "quantity": 614860.0,
           "market_value_lakh": 3608.61,
-          "pct_nav": 62.0
+          "pct_nav": 0.62
         },
         {
           "isin": "INE006I01046",
@@ -501,7 +501,7 @@
           "sector": "Industrial Products",
           "quantity": 233985.0,
           "market_value_lakh": 3579.27,
-          "pct_nav": 62.0
+          "pct_nav": 0.62
         },
         {
           "isin": "INE152M01016",
@@ -509,7 +509,7 @@
           "sector": "Electrical Equipment",
           "quantity": 601254.0,
           "market_value_lakh": 3446.69,
-          "pct_nav": 59.0
+          "pct_nav": 0.59
         },
         {
           "isin": "INE00FF01025",
@@ -517,7 +517,7 @@
           "sector": "Pharmaceuticals & Biotechnology",
           "quantity": 125000.0,
           "market_value_lakh": 3242.63,
-          "pct_nav": 56.0
+          "pct_nav": 0.56
         },
         {
           "isin": "INE913H01037",
@@ -525,7 +525,7 @@
           "sector": "Auto Components",
           "quantity": 137942.0,
           "market_value_lakh": 3214.88,
-          "pct_nav": 55.0
+          "pct_nav": 0.55
         },
         {
           "isin": "INE513A01022",
@@ -533,7 +533,7 @@
           "sector": "Auto Components",
           "quantity": 76125.0,
           "market_value_lakh": 3140.0,
-          "pct_nav": 54.0
+          "pct_nav": 0.54
         },
         {
           "isin": "INE570L01029",
@@ -541,7 +541,7 @@
           "sector": "Pharmaceuticals & Biotechnology",
           "quantity": 281249.0,
           "market_value_lakh": 3007.82,
-          "pct_nav": 52.0
+          "pct_nav": 0.52
         },
         {
           "isin": "INE196A01026",
@@ -549,7 +549,7 @@
           "sector": "Agricultural Food & other Products",
           "quantity": 376066.0,
           "market_value_lakh": 2914.51,
-          "pct_nav": 50.0
+          "pct_nav": 0.5
         },
         {
           "isin": "INE466L01038",
@@ -557,7 +557,7 @@
           "sector": "Capital Markets",
           "quantity": 279981.0,
           "market_value_lakh": 2896.82,
-          "pct_nav": 50.0
+          "pct_nav": 0.5
         },
         {
           "isin": "INE15B701018",
@@ -565,7 +565,7 @@
           "sector": "Financial Technology (Fintech)",
           "quantity": 1493845.0,
           "market_value_lakh": 2893.73,
-          "pct_nav": 50.0
+          "pct_nav": 0.5
         },
         {
           "isin": "INE330T01021",
@@ -573,7 +573,7 @@
           "sector": "Industrial Products",
           "quantity": 209214.0,
           "market_value_lakh": 2820.2,
-          "pct_nav": 49.0
+          "pct_nav": 0.49
         },
         {
           "isin": "INE572A01036",
@@ -581,7 +581,7 @@
           "sector": "Pharmaceuticals & Biotechnology",
           "quantity": 137406.0,
           "market_value_lakh": 2807.75,
-          "pct_nav": 48.0
+          "pct_nav": 0.48
         },
         {
           "isin": "INE673O01025",
@@ -589,7 +589,7 @@
           "sector": "Leisure Services",
           "quantity": 220875.0,
           "market_value_lakh": 2772.86,
-          "pct_nav": 48.0
+          "pct_nav": 0.48
         },
         {
           "isin": "INE506V01022",
@@ -597,7 +597,7 @@
           "sector": "Pharmaceuticals & Biotechnology",
           "quantity": 285000.0,
           "market_value_lakh": 2764.36,
-          "pct_nav": 48.0
+          "pct_nav": 0.48
         },
         {
           "isin": "INE0UIZ01018",
@@ -605,7 +605,7 @@
           "sector": "Transport Services",
           "quantity": 503447.0,
           "market_value_lakh": 2759.14,
-          "pct_nav": 48.0
+          "pct_nav": 0.48
         },
         {
           "isin": "INE322A01010",
@@ -613,7 +613,7 @@
           "sector": "Personal Products",
           "quantity": 33129.0,
           "market_value_lakh": 2634.92,
-          "pct_nav": 45.0
+          "pct_nav": 0.45
         },
         {
           "isin": "INE121R01077",
@@ -621,7 +621,7 @@
           "sector": "IT - Services",
           "quantity": 544128.0,
           "market_value_lakh": 2228.75,
-          "pct_nav": 38.0
+          "pct_nav": 0.38
         },
         {
           "isin": "INE00E101023",
@@ -629,7 +629,7 @@
           "sector": "Food Products",
           "quantity": 293345.0,
           "market_value_lakh": 1984.92,
-          "pct_nav": 34.0
+          "pct_nav": 0.34
         },
         {
           "isin": "INE647U01026",
@@ -637,7 +637,7 @@
           "sector": "Power",
           "quantity": 170954.0,
           "market_value_lakh": 1952.55,
-          "pct_nav": 34.0
+          "pct_nav": 0.34
         },
         {
           "isin": "INE00XB01019",
@@ -645,7 +645,7 @@
           "sector": "Auto Components",
           "quantity": 105605.0,
           "market_value_lakh": 1944.19,
-          "pct_nav": 34.0
+          "pct_nav": 0.34
         },
         {
           "isin": "INE429E01023",
@@ -653,7 +653,7 @@
           "sector": "Consumer Durables",
           "quantity": 90640.0,
           "market_value_lakh": 1280.29,
-          "pct_nav": 22.0
+          "pct_nav": 0.22
         },
         {
           "isin": "INE0HV901016",
@@ -661,7 +661,7 @@
           "sector": "Leisure Services",
           "quantity": 736990.0,
           "market_value_lakh": 1238.73,
-          "pct_nav": 21.0
+          "pct_nav": 0.21
         },
         {
           "isin": "INE494B04019",
@@ -669,7 +669,7 @@
           "sector": "Automobiles",
           "quantity": 2196804.0,
           "market_value_lakh": 224.07,
-          "pct_nav": 4.0
+          "pct_nav": 0.04
         },
         {
           "isin": "IN002025Z310",
@@ -677,7 +677,7 @@
           "sector": "SOVEREIGN",
           "quantity": 665000.0,
           "market_value_lakh": 647.47,
-          "pct_nav": 11.0
+          "pct_nav": 0.11
         },
         {
           "isin": "INF223J01NS5",
@@ -685,7 +685,7 @@
           "sector": "",
           "quantity": 1182258.669,
           "market_value_lakh": 4277.88,
-          "pct_nav": 74.0
+          "pct_nav": 0.74
         },
         {
           "isin": "2026-03-31 00:00:00",
