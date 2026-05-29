@@ -17,6 +17,11 @@ AMC_REGISTRY = {
         "fetch_fn": "fetch",
         "description": "Parag Parikh AMC",
     },
+    "canara_robeco": {
+        "module": "scrapers.canara_robeco",
+        "fetch_fn": "fetch",
+        "description": "Canara Robeco AMC",
+    },
     # Phase 2 additions (uncomment + implement scraper):
     # "hdfc":    {"module": "scrapers.hdfc",    "fetch_fn": "fetch", "description": "HDFC AMC"},
     # "axis":    {"module": "scrapers.axis",    "fetch_fn": "fetch", "description": "Axis AMC"},
