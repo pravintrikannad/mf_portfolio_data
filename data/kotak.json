@@ -1,0 +1,469 @@
+{
+  "amc": "kotak",
+  "date": "2026-04-30",
+  "source": "manual",
+  "schemes": [
+    {
+      "sheet_code": "SEF",
+      "scheme_code": "120166",
+      "holdings": [
+        {
+          "isin": "INE263A01024",
+          "name": "Bharat Electronics Ltd.",
+          "sector": "Aerospace and Defense",
+          "quantity": 73500000.0,
+          "market_value_lakh": 317005.5,
+          "pct_nav": 5.78
+        },
+        {
+          "isin": "INE040A01034",
+          "name": "HDFC BANK LTD.",
+          "sector": "Banks",
+          "quantity": 39500000.0,
+          "market_value_lakh": 304821.5,
+          "pct_nav": 5.5600000000000005
+        },
+        {
+          "isin": "INE090A01021",
+          "name": "ICICI BANK LTD.",
+          "sector": "Banks",
+          "quantity": 22000000.0,
+          "market_value_lakh": 277948.0,
+          "pct_nav": 5.07
+        },
+        {
+          "isin": "INE062A01020",
+          "name": "STATE BANK OF INDIA.",
+          "sector": "Banks",
+          "quantity": 23800000.0,
+          "market_value_lakh": 254291.1,
+          "pct_nav": 4.640000000000001
+        },
+        {
+          "isin": "INE749A01030",
+          "name": "Jindal Steel & Power Ltd",
+          "sector": "Ferrous Metals",
+          "quantity": 19000000.0,
+          "market_value_lakh": 232389.0,
+          "pct_nav": 4.24
+        },
+        {
+          "isin": "INE018A01030",
+          "name": "Larsen and Toubro Ltd.",
+          "sector": "Construction",
+          "quantity": 5300000.0,
+          "market_value_lakh": 212742.0,
+          "pct_nav": 3.88
+        },
+        {
+          "isin": "INE238A01034",
+          "name": "AXIS BANK LTD.",
+          "sector": "Banks",
+          "quantity": 16000000.0,
+          "market_value_lakh": 202928.0,
+          "pct_nav": 3.7000000000000006
+        },
+        {
+          "isin": "INE758T01015",
+          "name": "ETERNAL LIMITED",
+          "sector": "Retailing",
+          "quantity": 70000000.0,
+          "market_value_lakh": 172921.0,
+          "pct_nav": 3.15
+        },
+        {
+          "isin": "INE397D01024",
+          "name": "BHARTI AIRTEL LTD.",
+          "sector": "Telecom - Services",
+          "quantity": 8700000.0,
+          "market_value_lakh": 164151.6,
+          "pct_nav": 2.99
+        },
+        {
+          "isin": "INE481G01011",
+          "name": "Ultratech Cement Ltd.",
+          "sector": "Cement and Cement Products",
+          "quantity": 1375000.0,
+          "market_value_lakh": 159307.5,
+          "pct_nav": 2.91
+        },
+        {
+          "isin": "INE647A01010",
+          "name": "SRF LTD.",
+          "sector": "Chemicals and Petrochemicals",
+          "quantity": 6250000.0,
+          "market_value_lakh": 157412.5,
+          "pct_nav": 2.87
+        },
+        {
+          "isin": "INE343H01029",
+          "name": "Solar Industries India Limited",
+          "sector": "Chemicals and Petrochemicals",
+          "quantity": 1000000.0,
+          "market_value_lakh": 154390.0,
+          "pct_nav": 2.8200000000000003
+        },
+        {
+          "isin": "INE002A01018",
+          "name": "RELIANCE INDUSTRIES LTD.",
+          "sector": "Petroleum Products",
+          "quantity": 10000000.0,
+          "market_value_lakh": 143080.0,
+          "pct_nav": 2.6100000000000003
+        },
+        {
+          "isin": "INE465A01025",
+          "name": "BHARAT FORGE LTD.",
+          "sector": "Auto Components",
+          "quantity": 6600000.0,
+          "market_value_lakh": 124185.6,
+          "pct_nav": 2.2600000000000002
+        },
+        {
+          "isin": "INE646L01027",
+          "name": "Inter Globe Aviation Ltd",
+          "sector": "Transport Services",
+          "quantity": 2700000.0,
+          "market_value_lakh": 115973.1,
+          "pct_nav": 2.11
+        },
+        {
+          "isin": "INE118H01025",
+          "name": "BSE LTD",
+          "sector": "Capital Markets",
+          "quantity": 3100000.0,
+          "market_value_lakh": 112855.5,
+          "pct_nav": 2.06
+        },
+        {
+          "isin": "INE585B01010",
+          "name": "Maruti Suzuki India Limited",
+          "sector": "Automobiles",
+          "quantity": 800000.0,
+          "market_value_lakh": 106512.0,
+          "pct_nav": 1.94
+        },
+        {
+          "isin": "INE296A01032",
+          "name": "BAJAJ FINANCE LTD.",
+          "sector": "Finance",
+          "quantity": 11000000.0,
+          "market_value_lakh": 103070.0,
+          "pct_nav": 1.8800000000000001
+        },
+        {
+          "isin": "INE158A01026",
+          "name": "Hero MotoCorp Ltd.",
+          "sector": "Automobiles",
+          "quantity": 2000000.0,
+          "market_value_lakh": 101980.0,
+          "pct_nav": 1.86
+        },
+        {
+          "isin": "INE009A01021",
+          "name": "Infosys Ltd.",
+          "sector": "IT - Software",
+          "quantity": 8568905.0,
+          "market_value_lakh": 101267.32,
+          "pct_nav": 1.8500000000000003
+        },
+        {
+          "isin": "INE010B01027",
+          "name": "Zydus Lifesciences Ltd.",
+          "sector": "Pharmaceuticals and Biotechnology",
+          "quantity": 10500000.0,
+          "market_value_lakh": 93649.5,
+          "pct_nav": 1.71
+        },
+        {
+          "isin": "INE949L01017",
+          "name": "AU SMALL FINANCE BANK LTD.",
+          "sector": "Banks",
+          "quantity": 8900000.0,
+          "market_value_lakh": 90419.55,
+          "pct_nav": 1.6500000000000001
+        },
+        {
+          "isin": "INE152A01029",
+          "name": "Thermax Ltd.",
+          "sector": "Electrical Equipment",
+          "quantity": 2175000.0,
+          "market_value_lakh": 88687.8,
+          "pct_nav": 1.6199999999999999
+        },
+        {
+          "isin": "INE733E01010",
+          "name": "NTPC LTD",
+          "sector": "Power",
+          "quantity": 20000000.0,
+          "market_value_lakh": 79830.0,
+          "pct_nav": 1.46
+        },
+        {
+          "isin": "INE038A01020",
+          "name": "Hindalco Industries Ltd.",
+          "sector": "Non - Ferrous Metals",
+          "quantity": 7500000.0,
+          "market_value_lakh": 77850.0,
+          "pct_nav": 1.4200000000000002
+        },
+        {
+          "isin": "INE331A01037",
+          "name": "The Ramco Cements Ltd",
+          "sector": "Cement and Cement Products",
+          "quantity": 7700000.0,
+          "market_value_lakh": 72002.7,
+          "pct_nav": 1.31
+        },
+        {
+          "isin": "INE347G01014",
+          "name": "Petronet LNG Ltd.",
+          "sector": "Gas",
+          "quantity": 26000000.0,
+          "market_value_lakh": 71957.6,
+          "pct_nav": 1.31
+        },
+        {
+          "isin": "INE237A01036",
+          "name": "KOTAK MAHINDRA BANK LTD.",
+          "sector": "Banks",
+          "quantity": 18500000.0,
+          "market_value_lakh": 70910.5,
+          "pct_nav": 1.29
+        },
+        {
+          "isin": "INE669C01036",
+          "name": "Tech Mahindra Ltd.",
+          "sector": "IT - Software",
+          "quantity": 4700000.0,
+          "market_value_lakh": 69254.5,
+          "pct_nav": 1.26
+        },
+        {
+          "isin": "INE0HOQ01053",
+          "name": "BILLIONBRAINS GARAGE VENTURES LIMITED (GROWW)",
+          "sector": "Capital Markets",
+          "quantity": 32000000.0,
+          "market_value_lakh": 68796.8,
+          "pct_nav": 1.25
+        },
+        {
+          "isin": "INE095A01012",
+          "name": "INDUSIND BANK LTD.",
+          "sector": "Banks",
+          "quantity": 7500000.0,
+          "market_value_lakh": 68703.75,
+          "pct_nav": 1.25
+        },
+        {
+          "isin": "INE467B01029",
+          "name": "TATA CONSULTANCY SERVICES LTD.",
+          "sector": "IT - Software",
+          "quantity": 2600000.0,
+          "market_value_lakh": 64321.4,
+          "pct_nav": 1.17
+        },
+        {
+          "isin": "INE752E01010",
+          "name": "Power Grid Corporation of India Ltd.",
+          "sector": "Power",
+          "quantity": 20000000.0,
+          "market_value_lakh": 63670.0,
+          "pct_nav": 1.1600000000000001
+        },
+        {
+          "isin": "INE030A01027",
+          "name": "Hindustan Unilever Ltd.",
+          "sector": "Diversified FMCG",
+          "quantity": 2600000.0,
+          "market_value_lakh": 58523.4,
+          "pct_nav": 1.07
+        },
+        {
+          "isin": "INE029A01011",
+          "name": "BHARAT PETROLEUM CORPORATION  LTD.",
+          "sector": "Petroleum Products",
+          "quantity": 19000000.0,
+          "market_value_lakh": 57085.5,
+          "pct_nav": 1.04
+        },
+        {
+          "isin": "INE721A01047",
+          "name": "SHRIRAM FINANCE LIMITED",
+          "sector": "Finance",
+          "quantity": 6000000.0,
+          "market_value_lakh": 56241.0,
+          "pct_nav": 1.03
+        },
+        {
+          "isin": "INE121J01017",
+          "name": "Indus Towers Ltd.",
+          "sector": "Telecom - Services",
+          "quantity": 13000000.0,
+          "market_value_lakh": 53293.5,
+          "pct_nav": 0.97
+        },
+        {
+          "isin": "INE00R701025",
+          "name": "Dalmia Bharat Limited",
+          "sector": "Cement and Cement Products",
+          "quantity": 2700000.0,
+          "market_value_lakh": 51470.1,
+          "pct_nav": 0.9400000000000001
+        },
+        {
+          "isin": "INE883A01011",
+          "name": "MRF Ltd.",
+          "sector": "Auto Components",
+          "quantity": 38000.0,
+          "market_value_lakh": 49289.8,
+          "pct_nav": 0.9000000000000001
+        },
+        {
+          "isin": "INE059A01026",
+          "name": "Cipla Ltd.",
+          "sector": "Pharmaceuticals and Biotechnology",
+          "quantity": 3500000.0,
+          "market_value_lakh": 45836.0,
+          "pct_nav": 0.8400000000000001
+        },
+        {
+          "isin": "INE180A01020",
+          "name": "Max Financial Services Ltd",
+          "sector": "Insurance",
+          "quantity": 2700000.0,
+          "market_value_lakh": 42813.9,
+          "pct_nav": 0.78
+        },
+        {
+          "isin": "INE242A01010",
+          "name": "INDIAN OIL CORPORATION LTD.",
+          "sector": "Petroleum Products",
+          "quantity": 30000000.0,
+          "market_value_lakh": 42675.0,
+          "pct_nav": 0.78
+        },
+        {
+          "isin": "INE212H01026",
+          "name": "AIA Engineering Limited",
+          "sector": "Industrial Products",
+          "quantity": 1072487.0,
+          "market_value_lakh": 42358.950000000004,
+          "pct_nav": 0.77
+        },
+        {
+          "isin": "INE787D01026",
+          "name": "Balkrishna Industries Ltd",
+          "sector": "Auto Components",
+          "quantity": 1700000.0,
+          "market_value_lakh": 36733.6,
+          "pct_nav": 0.67
+        },
+        {
+          "isin": "INE258A01024",
+          "name": "BEML Limited",
+          "sector": "Agricultural, Commercial and Constr",
+          "quantity": 1900000.0,
+          "market_value_lakh": 34315.9,
+          "pct_nav": 0.63
+        },
+        {
+          "isin": "INE466L01038",
+          "name": "360 ONE WAM LIMITED",
+          "sector": "Capital Markets",
+          "quantity": 3100000.0,
+          "market_value_lakh": 32074.15,
+          "pct_nav": 0.5800000000000001
+        },
+        {
+          "isin": "INE092A01019",
+          "name": "Tata Chemicals Ltd.",
+          "sector": "Chemicals and Petrochemicals",
+          "quantity": 3750000.0,
+          "market_value_lakh": 30337.5,
+          "pct_nav": 0.55
+        },
+        {
+          "isin": "INE686F01025",
+          "name": "United Breweries Ltd.",
+          "sector": "Beverages",
+          "quantity": 2075000.0,
+          "market_value_lakh": 30265.95,
+          "pct_nav": 0.55
+        },
+        {
+          "isin": "INE169A01031",
+          "name": "Coromandel International Limited",
+          "sector": "Fertilizers and Agrochemicals",
+          "quantity": 1500000.0,
+          "market_value_lakh": 29725.5,
+          "pct_nav": 0.54
+        },
+        {
+          "isin": "INE079A01024",
+          "name": "AMBUJA CEMENTS LTD.",
+          "sector": "Cement and Cement Products",
+          "quantity": 6560571.0,
+          "market_value_lakh": 29142.06,
+          "pct_nav": 0.53
+        },
+        {
+          "isin": "INE102D01028",
+          "name": "GODREJ CONSUMER PRODUCTS LTD.",
+          "sector": "Personal Products",
+          "quantity": 2500000.0,
+          "market_value_lakh": 26677.5,
+          "pct_nav": 0.49
+        },
+        {
+          "isin": "INE389H01022",
+          "name": "KEC INTERNATIONAL LTD.",
+          "sector": "Construction",
+          "quantity": 4500000.0,
+          "market_value_lakh": 25231.5,
+          "pct_nav": 0.45999999999999996
+        },
+        {
+          "isin": "INE438A01022",
+          "name": "Apollo Tyres Ltd.",
+          "sector": "Auto Components",
+          "quantity": 5600000.0,
+          "market_value_lakh": 22870.4,
+          "pct_nav": 0.42000000000000004
+        },
+        {
+          "isin": "INE813H01021",
+          "name": "Torrent Power Ltd",
+          "sector": "Power",
+          "quantity": 1125000.0,
+          "market_value_lakh": 19530.0,
+          "pct_nav": 0.36000000000000004
+        },
+        {
+          "isin": "INE00H001014",
+          "name": "SWIGGY LTD",
+          "sector": "Retailing",
+          "quantity": 3861401.0,
+          "market_value_lakh": 10437.37,
+          "pct_nav": 0.19
+        },
+        {
+          "isin": "INE159A01016",
+          "name": "Glaxosmithkline Pharma Ltd",
+          "sector": "Pharmaceuticals and Biotechnology",
+          "quantity": 399331.0,
+          "market_value_lakh": 9329.97,
+          "pct_nav": 0.17
+        },
+        {
+          "isin": "INF174K01NE8",
+          "name": "Kotak Liquid Direct Growth",
+          "sector": "Mutual Fund",
+          "quantity": 175883.797,
+          "market_value_lakh": 9854.02,
+          "pct_nav": 0.18000000000000002
+        }
+      ]
+    }
+  ]
+}
