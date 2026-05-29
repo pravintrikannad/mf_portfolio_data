@@ -21,11 +21,53 @@ HEADERS = {
 
 # Filename keyword → scheme_code
 FUND_NAME_TO_SCHEME = {
-    "flexi cap": "100444",   # HDFC Flexi Cap Fund
-    "mid-cap":   "100233",   # HDFC Mid-Cap Opportunities Fund
-    "small cap": "100787",   # HDFC Small Cap Fund
-    "top 100":   "100205",   # HDFC Top 100 Fund
-    "balanced":  "100279",   # HDFC Balanced Advantage Fund
+    "flexi cap":                        "118955",
+    "small cap":                        "130503",
+    "mid cap":                          "118989",
+    "large cap":                        "119018",
+    "focused":                          "118950",
+    "multi cap":                        "149368",
+    "elss tax saver":                   "119060",
+    "elss tax":                         "119060",
+    "hybrid equity":                    "119062",
+    "hybrid debt":                      "119118",
+    "multi-asset":                      "119131",
+    "arbitrage":                        "118931",
+    "corporate bond":                   "118987",
+    "credit risk":                      "128051",
+    "short term  debt":                 "119016",
+    "short term debt":                  "119016",
+    "medium term":                      "119081",
+    "dynamic debt":                     "119075",
+    "income fund":                      "119069",
+    "gilt fund":                        "119116",
+    "liquid fund":                      "119091",
+    "money market":                     "119092",
+    "overnight":                        "119110",
+    "ultra short term":                 "145034",
+    "long duration":                    "151313",
+    "bse 500 index":                    "151728",
+    "bse india sector leaders":         "153959",
+    "crisil-ibx financial services 3-6":"153517",
+    "crisil-ibx financial services 9-12":"154308",
+    "nifty 100 index":                  "149868",
+    "nifty 100 equal weight":           "149870",
+    "nifty50 equal weight":             "149107",
+    "nifty next 50":                    "149288",
+    "nifty midcap 150":                 "151724",
+    "nifty smallcap 250":               "151727",
+    "nifty largemidcap 250":            "152889",
+    "nifty g-sec jun 2027":             "151181",
+    "nifty g-sec dec 2026":             "150845",
+    "nifty g-sec apr 2029":             "151495",
+    "nifty g-sec jul 2031":             "150847",
+    "nifty g-sec sep 2032":             "151183",
+    "nifty g-sec jun 2036":             "151489",
+    "nifty sdl oct 2026":               "151456",
+    "nifty sdl plus g-sec jun 2027":    "151570",
+    "nifty india consumption":          "154179",
+    "nifty india digital":              "153097",
+    "developed world":                  "149180",
 }
 
 
