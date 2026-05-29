@@ -96,26 +96,28 @@ class DownloadHandler(FileSystemEventHandler):
     def __init__(self):
         self._seen = set()
 
-    def on_created(self, event):
-        if event.is_directory:
-            return
-        path = Path(event.src_path)
+    def _handle_path(self, path: Path):
         if path.suffix.lower() not in (".xlsx", ".xls"):
             return
         if path in self._seen:
             return
         self._seen.add(path)
-
-        # Wait for file to finish writing (Safari/Chrome write in chunks)
         self._wait_stable(path)
-
         amc_key = detect_amc(path.name)
         if not amc_key:
             log.info(f"Ignored (no AMC match): {path.name}")
             return
-
         log.info(f"Detected: {path.name}  →  [{amc_key}]")
         parse_and_commit(path, amc_key)
+
+    def on_created(self, event):
+        if not event.is_directory:
+            self._handle_path(Path(event.src_path))
+
+    def on_moved(self, event):
+        # Safari/Chrome rename .download → .xlsx when complete
+        if not event.is_directory:
+            self._handle_path(Path(event.dest_path))
 
     def _wait_stable(self, path: Path, timeout: int = 30):
         """Wait until file size stops changing (download complete)."""
