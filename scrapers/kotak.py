@@ -21,11 +21,14 @@ HEADERS = {
 # Sheet code → scheme_code for funds in our universe
 SHEET_TO_SCHEME = {
     "SEF": "120166",  # Kotak Flexicap Fund
-    "NEF": "119597",  # Kotak Emerging Equity Fund
-    "KBC": "120505",  # Kotak Bluechip Fund
-    "MSC": "120842",  # Kotak Small Cap Fund
-    "BAL": "119598",  # Kotak Aggressive Hybrid Fund
-    "NIF": "120843",  # Kotak Nifty 50 Index Fund
+    "NEF": "119775",  # Kotak Midcap Fund
+    "KBC": "120152",  # Kotak Large Cap Fund
+    "MSC": "120164",  # Kotak Small Cap Fund
+    "BAL": "133035",  # Kotak Aggressive Hybrid Fund
+    "NIF": "148978",  # Kotak Nifty 50 Index Fund
+    "MCF": "149185",  # Kotak Multicap Fund
+    "MID": "120158",  # Kotak Large & Midcap Fund
+    "ELS": "119773",  # Kotak ELSS Tax Saver Fund
 }
 
 
