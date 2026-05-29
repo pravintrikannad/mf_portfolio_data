@@ -1,0 +1,53 @@
+name: Fetch AMC Portfolio Holdings
+
+on:
+  # Run on 3rd of every month at 9:00 UTC (2:30 PM IST)
+  # AMCs publish by end of 10th; SEBI deadline is 10th but most publish by 5th
+  schedule:
+    - cron: "0 9 3 * *"
+
+  # Allow manual trigger from GitHub Actions UI
+  workflow_dispatch:
+    inputs:
+      amc:
+        description: "AMC key to fetch (leave blank for all)"
+        required: false
+        default: ""
+
+jobs:
+  fetch-holdings:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to commit data/ files
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests openpyxl
+
+      - name: Fetch portfolio data
+        run: |
+          if [ -n "${{ github.event.inputs.amc }}" ]; then
+            python run_fetch.py "${{ github.event.inputs.amc }}"
+          else
+            python run_fetch.py
+          fi
+
+      - name: Commit updated data files
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "chore: update holdings data $(date +%Y-%m-%d)"
+            git push
+          fi
