@@ -6,13 +6,15 @@ from typing import Optional
 
 def parse_date_from_text(text: str) -> Optional[str]:
     """Extract date from strings like 'Monthly Portfolio Statement as on April 30, 2026'."""
-    m = re.search(r'as on\s+(\w+ \d{1,2},\s*\d{4})', text, re.IGNORECASE)
+    m = re.search(r'as on\s+(\w+ \d{1,2},?\s*\d{4})', text, re.IGNORECASE)
     if m:
-        try:
-            dt = datetime.datetime.strptime(m.group(1).strip(), "%B %d, %Y")
-            return dt.strftime("%Y-%m-%d")
-        except ValueError:
-            pass
+        raw = m.group(1).strip()
+        for fmt in ("%B %d, %Y", "%B %d,%Y", "%B %d %Y"):
+            try:
+                dt = datetime.datetime.strptime(raw, fmt)
+                return dt.strftime("%Y-%m-%d")
+            except ValueError:
+                continue
     # fallback: YYYY-MM-DD anywhere in text
     m2 = re.search(r'(\d{4}-\d{2}-\d{2})', text)
     if m2:

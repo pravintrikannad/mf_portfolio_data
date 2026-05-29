@@ -22,6 +22,11 @@ AMC_REGISTRY = {
         "fetch_fn": "fetch",
         "description": "Canara Robeco AMC",
     },
+    "pgim": {
+        "module": "scrapers.pgim",
+        "fetch_fn": "fetch",
+        "description": "PGIM India AMC",
+    },
     # Phase 2 additions (uncomment + implement scraper):
     # "hdfc":    {"module": "scrapers.hdfc",    "fetch_fn": "fetch", "description": "HDFC AMC"},
     # "axis":    {"module": "scrapers.axis",    "fetch_fn": "fetch", "description": "Axis AMC"},
