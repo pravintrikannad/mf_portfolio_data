@@ -46,6 +46,7 @@ AMC_PATTERNS = [
     (r"nippon",               "nippon"),
     (r"dsp",                  "dsp"),
     (r"franklin",             "franklin"),
+    (r"edel",                 "edelweiss"),
 ]
 
 

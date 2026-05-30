@@ -258,6 +258,80 @@ HDFC_SCHEME = {
 }
 
 
+def _parse_edel(ws):
+    """Edelweiss layout: col0=name, col1=ISIN, col2=sector, col3=qty, col4=mktval, col5=pct."""
+    date_str = None
+    holdings = []
+    header_found = False
+
+    for row in ws.iter_rows(values_only=True):
+        cells = [clean_str(c) for c in row]
+        text  = " ".join(cells)
+
+        if not date_str and "as on" in text.lower():
+            date_str = parse_date_from_text(text)
+
+        if not header_found:
+            if cells[0] and "name of" in cells[0].lower() and (
+                    "instrument" in cells[0].lower() or "issuer" in cells[0].lower()):
+                header_found = True
+            continue
+
+        if not any(cells):
+            continue
+
+        name   = cells[0] if len(cells) > 0 else ""
+        isin   = cells[1] if len(cells) > 1 else ""
+        sector = cells[2] if len(cells) > 2 else ""
+
+        if not name or not isin:
+            continue
+        if not isin.startswith("IN"):
+            continue
+        if re.match(r"^(sub\s*total|total|grand\s*total|net receivable|margin|treps)", name.strip(), re.IGNORECASE):
+            continue
+        if re.match(r"^(\(a\)|\(b\)|\(c\)|listed|unlisted|equity|debt|others|money market)", name.strip(), re.IGNORECASE):
+            continue
+
+        pct_nav = safe_float(cells[5]) if len(cells) > 5 else None
+        holdings.append({
+            "isin":              isin,
+            "name":              name,
+            "sector":            sector,
+            "quantity":          safe_float(cells[3]) if len(cells) > 3 else None,
+            "market_value_lakh": safe_float(cells[4]) if len(cells) > 4 else None,
+            "pct_nav":           pct_nav,
+            "_raw_pct":          pct_nav,
+        })
+
+    raw_pcts = [h["_raw_pct"] for h in holdings if h["_raw_pct"] is not None]
+    if raw_pcts and all(p < 1.5 for p in raw_pcts):
+        for h in holdings:
+            if h["pct_nav"] is not None:
+                h["pct_nav"] = round(h["pct_nav"] * 100, 4)
+    for h in holdings:
+        h.pop("_raw_pct", None)
+
+    return date_str, holdings
+
+
+def _read_edel_index(wb) -> dict[str, str]:
+    """Read Edelweiss Index sheet → {sheet_code: scheme_name}. col0=Fund Id, col1=Fund Desc."""
+    if "Index" not in wb.sheetnames:
+        return {}
+    index = {}
+    for row in wb["Index"].iter_rows(values_only=True):
+        cells = [clean_str(c) for c in row]
+        if len(cells) < 2 or not cells[0] or not cells[1]:
+            continue
+        if cells[0].lower() in ("fund id", "index", ""):
+            continue
+        if re.match(r"^(edelweiss|portfolio|mutual fund)\b", cells[0], re.IGNORECASE):
+            continue
+        index[cells[0]] = cells[1]
+    return index
+
+
 def _match_scheme(name_lower: str, mapping: dict) -> str | None:
     for kw, code in mapping.items():
         if kw in name_lower:
@@ -323,5 +397,28 @@ def parse_file(filepath: Path, amc_key: str) -> dict | None:
                     "holdings":    result["holdings"],
                 })
         return {"amc": "ppfas", "date": global_date, "source": str(filepath.name), "schemes": schemes}
+
+    if amc_key == "edelweiss":
+        index = _read_edel_index(wb)
+        schemes = []
+        global_date = None
+        for sheet_name in wb.sheetnames:
+            if sheet_name.lower() in ("index", "notes", "disclaimer"):
+                continue
+            date_str, holdings = _parse_edel(wb[sheet_name])
+            if not holdings:
+                continue
+            if date_str and not global_date:
+                global_date = date_str
+            scheme_name = index.get(sheet_name, "")
+            schemes.append({
+                "sheet_code":  sheet_name,
+                "scheme_code": None,
+                "scheme_name": scheme_name,
+                "holdings":    holdings,
+            })
+        if not schemes:
+            return None
+        return {"amc": "edelweiss", "date": global_date, "source": str(filepath.name), "schemes": schemes}
 
     return None
