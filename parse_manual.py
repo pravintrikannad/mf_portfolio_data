@@ -397,6 +397,68 @@ def _read_edel_index(wb) -> dict[str, str]:
     return index
 
 
+def _parse_navi_sheet(ws) -> tuple[str, str, str, list]:
+    """Navi layout: col1=name, col2=ISIN, col3=sector, col4=qty, col5=mktval, col6=pct.
+    Row 4 col1=scheme_name; Row 5 col1='...month ended DD Mon YYYY'.
+    Returns (sheet_code, scheme_name, date_str, holdings)."""
+    date_str = None
+    scheme_name = ""
+    holdings = []
+    header_found = False
+
+    for i, row in enumerate(ws.iter_rows(values_only=True)):
+        cells = [clean_str(c) for c in row]
+        text  = " ".join(cells)
+
+        if i == 3:  # row index 3 = "NAVI MUTUAL FUND"
+            continue
+        if i == 4:
+            scheme_name = cells[1] if len(cells) > 1 else ""
+            continue
+        if i == 5:
+            m = re.search(r'month ended\s+(\d{1,2}\s+\w+\s+\d{4})', text, re.IGNORECASE)
+            if m:
+                for fmt in ("%d %b %Y", "%d %B %Y"):
+                    try:
+                        import datetime
+                        date_str = datetime.datetime.strptime(m.group(1).strip(), fmt).strftime("%Y-%m-%d")
+                        break
+                    except ValueError:
+                        pass
+            continue
+
+        if not header_found:
+            if len(cells) > 2 and cells[1] and "name of" in cells[1].lower() and "instrument" in cells[1].lower():
+                header_found = True
+            continue
+
+        if not any(cells):
+            continue
+
+        name   = cells[1] if len(cells) > 1 else ""
+        isin   = cells[2] if len(cells) > 2 else ""
+        sector = cells[3] if len(cells) > 3 else ""
+
+        if not name or not isin or not isin.startswith("IN"):
+            continue
+        if re.match(r"^(sub\s*total|total|grand\s*total|net receivable|margin|treps)", name.strip(), re.IGNORECASE):
+            continue
+        if re.match(r"^(\(a\)|\(b\)|\(c\)|listed|unlisted|equity|debt|others|money market|government|non.convert)", name.strip(), re.IGNORECASE):
+            continue
+
+        holdings.append({
+            "isin":              isin,
+            "name":              name,
+            "sector":            sector,
+            "quantity":          safe_float(cells[4]) if len(cells) > 4 else None,
+            "market_value_lakh": safe_float(cells[5]) if len(cells) > 5 else None,
+            "pct_nav":           safe_float(cells[6]) if len(cells) > 6 else None,
+        })
+
+    sheet_code = re.sub(r'[^A-Za-z0-9]', '_', scheme_name).upper()[:20].strip('_')
+    return sheet_code, scheme_name, date_str, holdings
+
+
 def _parse_invesco_sheet(ws) -> tuple[str, str, str, list]:
     """Invesco layout (one fund per file, two sheets — use code sheet).
     Row 0 col0=sheet_code; Row 1 col1=date text; Row 2 col1=scheme_name; Row 4=header.
@@ -606,6 +668,15 @@ def parse_file(filepath: Path, amc_key: str) -> dict | None:
                     "holdings":    result["holdings"],
                 })
         return {"amc": "ppfas", "date": global_date, "source": str(filepath.name), "schemes": schemes}
+
+    if amc_key == "navi":
+        ws = wb.active
+        sheet_code, scheme_name, date_str, holdings = _parse_navi_sheet(ws)
+        if not holdings:
+            return None
+        return {"amc": "navi", "date": date_str, "source": str(filepath.name),
+                "schemes": [{"sheet_code": sheet_code, "scheme_code": None,
+                              "scheme_name": scheme_name, "holdings": holdings}]}
 
     if amc_key == "invesco":
         # Each file has two sheets: readable name (has holdings) + code name (summary only)
