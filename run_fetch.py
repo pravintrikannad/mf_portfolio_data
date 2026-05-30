@@ -55,6 +55,9 @@ AMC_REGISTRY = {
     "quant":     {"advisorkhoj": True, "description": "Quant AMC"},
     "bajaj":     {"advisorkhoj": True, "description": "Bajaj Finserv AMC"},
     "nj":        {"advisorkhoj": True, "description": "NJ AMC"},
+    "sundaram":  {"advisorkhoj": True, "description": "Sundaram AMC"},
+    "trust":     {"advisorkhoj": True, "description": "Trust AMC"},
+    "360one":    {"advisorkhoj": True, "description": "360 ONE AMC"},
 }
 
 

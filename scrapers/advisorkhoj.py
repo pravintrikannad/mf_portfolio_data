@@ -114,6 +114,18 @@ AMC_REGISTRY = {
         "slug": "NJ-Mutual-Fund",
         "layout": "std",
     },
+    "sundaram": {
+        "slug": "Sundaram-Mutual-Fund",
+        "layout": "nippon",   # col0=serial, col1=ISIN, col2=name, col3=sector, col4=qty, col5=mktval, col6=pct
+    },
+    "trust": {
+        "slug": "Trust-Mutual-Fund",
+        "layout": "std",
+    },
+    "360one": {
+        "slug": "360-ONE-Mutual-Fund",
+        "layout": "nippon",   # col0=serial, col1=ISIN, col2=name — same as Sundaram/Nippon
+    },
 }
 
 
@@ -163,7 +175,14 @@ def _open_workbook(data: bytes, filename: str):
 
 def _download_workbook(url: str) -> list[openpyxl.Workbook]:
     """Download URL and return list of openpyxl Workbooks (ZIP may contain multiple)."""
-    resp = requests.get(url, headers=HEADERS, timeout=120)
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=120)
+    except Exception:
+        # Retry without SSL verification (some AMC sites have cert issues)
+        import warnings
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            resp = requests.get(url, headers=HEADERS, timeout=120, verify=False)
     resp.raise_for_status()
     content = resp.content
 
@@ -368,7 +387,7 @@ def _parse_quant(ws) -> tuple[Optional[str], list]:
             date_str = parse_date_from_text(text)
 
         if not header_found:
-            if len(cells) > 2 and cells[1] and cells[1].lower() in ("isin", "isin no", "isin number", "isin code"):
+            if len(cells) > 2 and cells[1] and cells[1].lower().strip() in ("isin", "isin no", "isin number", "isin code", "isin number/code"):
                 header_found = True
             continue
 
@@ -454,7 +473,7 @@ def _parse_nippon(ws) -> tuple[Optional[str], list]:
             date_str = parse_date_from_text(text)
 
         if not header_found:
-            if len(cells) > 2 and cells[1] and cells[1].lower() in ("isin", "isin no", "isin number"):
+            if len(cells) > 2 and cells[1] and cells[1].lower() in ("isin", "isin no", "isin number", "isin code", "isin number/code"):
                 header_found = True
             continue
 
