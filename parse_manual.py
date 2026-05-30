@@ -397,6 +397,65 @@ def _read_edel_index(wb) -> dict[str, str]:
     return index
 
 
+def _parse_invesco_sheet(ws) -> tuple[str, str, str, list]:
+    """Invesco layout (one fund per file, two sheets — use code sheet).
+    Row 0 col0=sheet_code; Row 1 col1=date text; Row 2 col1=scheme_name; Row 4=header.
+    Data: col1=name, col2=ISIN, col3=sector, col4=qty, col5=mktval, col6=pct (plain %).
+    Returns (sheet_code, scheme_name, date_str, holdings)."""
+    date_str = None
+    scheme_name = ""
+    sheet_code = ""
+    holdings = []
+    header_found = False
+
+    for i, row in enumerate(ws.iter_rows(values_only=True)):
+        cells = [clean_str(c) for c in row]
+        text  = " ".join(cells)
+
+        if i == 0:
+            sheet_code = cells[0]
+            continue
+        if i == 1:
+            if "as on" in text.lower():
+                date_str = parse_date_from_text(text)
+            continue
+        if i == 2:
+            # scheme_name may contain newlines — take first line
+            raw = cells[1] if len(cells) > 1 else ""
+            scheme_name = raw.split("\n")[0].strip()
+            continue
+
+        if not header_found:
+            if len(cells) > 2 and cells[1] and "name of" in cells[1].lower() and "instrument" in cells[1].lower():
+                header_found = True
+            continue
+
+        if not any(cells):
+            continue
+
+        name   = cells[1] if len(cells) > 1 else ""
+        isin   = cells[2] if len(cells) > 2 else ""
+        sector = cells[3] if len(cells) > 3 else ""
+
+        if not name or not isin or not isin.startswith("IN"):
+            continue
+        if re.match(r"^(sub\s*total|total|grand\s*total|net receivable|margin|treps)", name.strip(), re.IGNORECASE):
+            continue
+        if re.match(r"^(\(a\)|\(b\)|\(c\)|listed|unlisted|equity|debt|others|money market|government|non.convert)", name.strip(), re.IGNORECASE):
+            continue
+
+        holdings.append({
+            "isin":              isin,
+            "name":              name,
+            "sector":            sector,
+            "quantity":          safe_float(cells[4]) if len(cells) > 4 else None,
+            "market_value_lakh": safe_float(cells[5]) if len(cells) > 5 else None,
+            "pct_nav":           safe_float(cells[6]) if len(cells) > 6 else None,
+        })
+
+    return sheet_code, scheme_name, date_str, holdings
+
+
 def _parse_baroda_sheet(ws) -> tuple[str, str, list]:
     """Baroda BNP layout: col1=name, col2=ISIN, col3=sector, col4=qty, col5=mktval, col6=pct.
     Row 0 col1=scheme_name; date anywhere with 'as on'. Returns (scheme_name, date_str, holdings)."""
@@ -547,6 +606,16 @@ def parse_file(filepath: Path, amc_key: str) -> dict | None:
                     "holdings":    result["holdings"],
                 })
         return {"amc": "ppfas", "date": global_date, "source": str(filepath.name), "schemes": schemes}
+
+    if amc_key == "invesco":
+        # Each file has two sheets: readable name (has holdings) + code name (summary only)
+        code_sheet = next((s for s in wb.sheetnames if not re.match(r'^[A-Z0-9]{3,8}$', s)), wb.sheetnames[0])
+        sheet_code, scheme_name, date_str, holdings = _parse_invesco_sheet(wb[code_sheet])
+        if not holdings:
+            return None
+        return {"amc": "invesco", "date": date_str, "source": str(filepath.name),
+                "schemes": [{"sheet_code": sheet_code, "scheme_code": None,
+                              "scheme_name": scheme_name, "holdings": holdings}]}
 
     if amc_key == "baroda":
         index = _read_serial_index(wb)
