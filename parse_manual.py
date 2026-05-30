@@ -397,6 +397,131 @@ def _read_edel_index(wb) -> dict[str, str]:
     return index
 
 
+def _parse_whiteoak_sheet(ws) -> tuple[str, str, str, list]:
+    """WhiteOak layout: Row 0 col1=scheme_name; date via 'as on'.
+    ISIN col auto-detected from header (col2 or col3 depending on variant)."""
+    date_str = None
+    scheme_name = ""
+    holdings = []
+    header_found = False
+    isin_col = 3   # default: col3 (most WOC files have empty col2)
+    qty_col, mv_col, pct_col = 5, 6, 7
+
+    for i, row in enumerate(ws.iter_rows(values_only=True)):
+        cells = [clean_str(c) for c in row]
+        text  = " ".join(cells)
+
+        if i == 0:
+            scheme_name = cells[1] if len(cells) > 1 else ""
+            continue
+
+        if not date_str and "as on" in text.lower():
+            date_str = parse_date_from_text(text)
+
+        if not header_found:
+            if len(cells) > 2 and cells[1] and "name of" in cells[1].lower() and "instrument" in cells[1].lower():
+                # Detect ISIN column from header row
+                for ci, cv in enumerate(cells):
+                    if cv.lower() == "isin":
+                        isin_col = ci
+                        qty_col  = isin_col + 2
+                        mv_col   = isin_col + 3
+                        pct_col  = isin_col + 4
+                        break
+                header_found = True
+            continue
+
+        if not any(cells):
+            continue
+
+        name   = cells[1] if len(cells) > 1 else ""
+        isin   = cells[isin_col] if len(cells) > isin_col else ""
+        sector = cells[isin_col + 1] if len(cells) > isin_col + 1 else ""
+
+        if not name or not isin or not isin.startswith("IN"):
+            continue
+        if re.match(r"^(sub\s*total|total|grand\s*total|net receivable|margin|treps)", name.strip(), re.IGNORECASE):
+            continue
+        if re.match(r"^(\(a\)|\(b\)|\(c\)|listed|unlisted|equity|debt|others|money market|government)", name.strip(), re.IGNORECASE):
+            continue
+
+        pct_nav = safe_float(cells[pct_col]) if len(cells) > pct_col else None
+        holdings.append({
+            "isin":              isin,
+            "name":              name,
+            "sector":            sector,
+            "quantity":          safe_float(cells[qty_col]) if len(cells) > qty_col else None,
+            "market_value_lakh": safe_float(cells[mv_col]) if len(cells) > mv_col else None,
+            "pct_nav":           pct_nav,
+            "_raw_pct":          pct_nav,
+        })
+
+    raw_pcts = [h["_raw_pct"] for h in holdings if h["_raw_pct"] is not None]
+    if raw_pcts and all(p < 1.5 for p in raw_pcts):
+        for h in holdings:
+            if h["pct_nav"] is not None:
+                h["pct_nav"] = round(h["pct_nav"] * 100, 4)
+    for h in holdings:
+        h.pop("_raw_pct", None)
+
+    return ws.title, scheme_name, date_str, holdings
+
+
+def _parse_mahindra_sheet(ws) -> tuple[str, str, str, list]:
+    """Mahindra Manulife layout: Row 0 col0=sheet_code; Row 1=date; Row 2 col1=scheme_name.
+    Data: col1=name, col2=ISIN, col3=sector, col4=qty, col5=mktval, col6=pct (plain %)."""
+    date_str = None
+    scheme_name = ""
+    sheet_code = ""
+    holdings = []
+    header_found = False
+
+    for i, row in enumerate(ws.iter_rows(values_only=True)):
+        cells = [clean_str(c) for c in row]
+        text  = " ".join(cells)
+
+        if i == 0:
+            sheet_code = cells[0]
+            continue
+        if i == 1:
+            if "as on" in text.lower():
+                date_str = parse_date_from_text(text)
+            continue
+        if i == 2:
+            scheme_name = cells[1] if len(cells) > 1 else ""
+            continue
+
+        if not header_found:
+            if len(cells) > 2 and cells[1] and "name of" in cells[1].lower() and "instrument" in cells[1].lower():
+                header_found = True
+            continue
+
+        if not any(cells):
+            continue
+
+        name   = cells[1] if len(cells) > 1 else ""
+        isin   = cells[2] if len(cells) > 2 else ""
+        sector = cells[3] if len(cells) > 3 else ""
+
+        if not name or not isin or not isin.startswith("IN"):
+            continue
+        if re.match(r"^(sub\s*total|total|grand\s*total|net receivable|margin|treps)", name.strip(), re.IGNORECASE):
+            continue
+        if re.match(r"^(\(a\)|\(b\)|\(c\)|listed|unlisted|equity|debt|others|money market|government)", name.strip(), re.IGNORECASE):
+            continue
+
+        holdings.append({
+            "isin":              isin,
+            "name":              name,
+            "sector":            sector,
+            "quantity":          safe_float(cells[4]) if len(cells) > 4 else None,
+            "market_value_lakh": safe_float(cells[5]) if len(cells) > 5 else None,
+            "pct_nav":           safe_float(cells[6]) if len(cells) > 6 else None,
+        })
+
+    return sheet_code, scheme_name, date_str, holdings
+
+
 def _parse_navi_sheet(ws) -> tuple[str, str, str, list]:
     """Navi layout: col1=name, col2=ISIN, col3=sector, col4=qty, col5=mktval, col6=pct.
     Row 4 col1=scheme_name; Row 5 col1='...month ended DD Mon YYYY'.
@@ -634,9 +759,18 @@ def parse_file(filepath: Path, amc_key: str) -> dict | None:
     if amc_key == "hdfc":
         ws = next((wb[s] for s in wb.sheetnames if "derivative" not in s.lower()), wb.active)
         date_str, holdings = _parse_hdfc(ws)
+        sheet_code = next((s for s in wb.sheetnames if "derivative" not in s.lower()), wb.sheetnames[0])
         scheme_code = _match_scheme(name_lower, HDFC_SCHEME)
+        # Extract scheme_name from row 0 for fuzzy matching when scheme_code not pre-mapped
+        scheme_name = ""
+        for row in ws.iter_rows(values_only=True):
+            v = row[0]
+            if v:
+                scheme_name = clean_str(v).split("(")[0].strip()
+                break
         return {"amc": "hdfc", "date": date_str, "source": str(filepath.name),
-                "schemes": [{"sheet_code": wb.sheetnames[0], "scheme_code": scheme_code, "holdings": holdings}]}
+                "schemes": [{"sheet_code": sheet_code, "scheme_code": scheme_code,
+                              "scheme_name": scheme_name, "holdings": holdings}]}
 
     if amc_key == "canara_robeco":
         ws = wb.active
@@ -668,6 +802,56 @@ def parse_file(filepath: Path, amc_key: str) -> dict | None:
                     "holdings":    result["holdings"],
                 })
         return {"amc": "ppfas", "date": global_date, "source": str(filepath.name), "schemes": schemes}
+
+    if amc_key == "axis":
+        index = _read_serial_index(wb)
+        schemes = []
+        global_date = None
+        for sheet_name in wb.sheetnames:
+            if sheet_name.lower() in ("index", "notes", "disclaimer"):
+                continue
+            scheme_name, date_str, holdings = _parse_baroda_sheet(wb[sheet_name])
+            if not holdings:
+                continue
+            if date_str and not global_date:
+                global_date = date_str
+            schemes.append({
+                "sheet_code":  sheet_name,
+                "scheme_code": None,
+                "scheme_name": index.get(sheet_name, scheme_name),
+                "holdings":    holdings,
+            })
+        if not schemes:
+            return None
+        return {"amc": "axis", "date": global_date, "source": str(filepath.name), "schemes": schemes}
+
+    if amc_key == "whiteoak":
+        ws = wb.active
+        sheet_code, scheme_name, date_str, holdings = _parse_whiteoak_sheet(ws)
+        if not holdings:
+            return None
+        return {"amc": "whiteoak", "date": date_str, "source": str(filepath.name),
+                "schemes": [{"sheet_code": sheet_code, "scheme_code": None,
+                              "scheme_name": scheme_name, "holdings": holdings}]}
+
+    if amc_key == "mahindra":
+        schemes = []
+        global_date = None
+        for sheet_name in wb.sheetnames:
+            sheet_code, scheme_name, date_str, holdings = _parse_mahindra_sheet(wb[sheet_name])
+            if not holdings:
+                continue
+            if date_str and not global_date:
+                global_date = date_str
+            schemes.append({
+                "sheet_code":  sheet_code,
+                "scheme_code": None,
+                "scheme_name": scheme_name,
+                "holdings":    holdings,
+            })
+        if not schemes:
+            return None
+        return {"amc": "mahindra", "date": global_date, "source": str(filepath.name), "schemes": schemes}
 
     if amc_key == "navi":
         ws = wb.active
