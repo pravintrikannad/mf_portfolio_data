@@ -397,6 +397,81 @@ def _read_edel_index(wb) -> dict[str, str]:
     return index
 
 
+def _parse_baroda_sheet(ws) -> tuple[str, str, list]:
+    """Baroda BNP layout: col1=name, col2=ISIN, col3=sector, col4=qty, col5=mktval, col6=pct.
+    Row 0 col1=scheme_name; date anywhere with 'as on'. Returns (scheme_name, date_str, holdings)."""
+    date_str = None
+    scheme_name = ""
+    holdings = []
+    header_found = False
+
+    for i, row in enumerate(ws.iter_rows(values_only=True)):
+        cells = [clean_str(c) for c in row]
+        text  = " ".join(cells)
+
+        if i == 0:
+            scheme_name = cells[1] if len(cells) > 1 else ""
+            continue
+
+        if not date_str and "as on" in text.lower():
+            date_str = parse_date_from_text(text)
+
+        if not header_found:
+            if len(cells) > 2 and cells[1] and "name of" in cells[1].lower() and "instrument" in cells[1].lower():
+                header_found = True
+            continue
+
+        if not any(cells):
+            continue
+
+        name   = cells[1] if len(cells) > 1 else ""
+        isin   = cells[2] if len(cells) > 2 else ""
+        sector = cells[3] if len(cells) > 3 else ""
+
+        if not name or not isin or not isin.startswith("IN"):
+            continue
+        if re.match(r"^(sub\s*total|total|grand\s*total|net receivable|margin|treps)", name.strip(), re.IGNORECASE):
+            continue
+        if re.match(r"^(\(a\)|\(b\)|\(c\)|listed|unlisted|equity|debt|others|money market|government|non.convert)", name.strip(), re.IGNORECASE):
+            continue
+
+        pct_nav = safe_float(cells[6]) if len(cells) > 6 else None
+        holdings.append({
+            "isin":              isin,
+            "name":              name,
+            "sector":            sector,
+            "quantity":          safe_float(cells[4]) if len(cells) > 4 else None,
+            "market_value_lakh": safe_float(cells[5]) if len(cells) > 5 else None,
+            "pct_nav":           pct_nav,
+            "_raw_pct":          pct_nav,
+        })
+
+    raw_pcts = [h["_raw_pct"] for h in holdings if h["_raw_pct"] is not None]
+    if raw_pcts and all(p < 1.5 for p in raw_pcts):
+        for h in holdings:
+            if h["pct_nav"] is not None:
+                h["pct_nav"] = round(h["pct_nav"] * 100, 4)
+    for h in holdings:
+        h.pop("_raw_pct", None)
+
+    return scheme_name, date_str, holdings
+
+
+def _read_serial_index(wb) -> dict[str, str]:
+    """Index sheet with col0=serial, col1=sheet_code, col2=scheme_name."""
+    if "Index" not in wb.sheetnames:
+        return {}
+    index = {}
+    for row in wb["Index"].iter_rows(values_only=True):
+        cells = [clean_str(c) for c in row]
+        if len(cells) < 3 or not cells[1] or not cells[2]:
+            continue
+        if cells[1].lower() in ("short name", "index", ""):
+            continue
+        index[cells[1]] = cells[2]
+    return index
+
+
 def _match_scheme(name_lower: str, mapping: dict) -> str | None:
     for kw, code in mapping.items():
         if kw in name_lower:
@@ -406,8 +481,18 @@ def _match_scheme(name_lower: str, mapping: dict) -> str | None:
 
 # ── Main entry point ──────────────────────────────────────────────────────────
 
+def _load_workbook(filepath: Path):
+    """Load workbook handling .xls files that are actually XLSX (PK magic bytes)."""
+    try:
+        return openpyxl.load_workbook(str(filepath), data_only=True)
+    except Exception:
+        # .xls extension but XLSX content — load via BytesIO
+        data = filepath.read_bytes()
+        return openpyxl.load_workbook(io.BytesIO(data), data_only=True)
+
+
 def parse_file(filepath: Path, amc_key: str) -> dict | None:
-    wb = openpyxl.load_workbook(str(filepath), data_only=True)
+    wb = _load_workbook(filepath)
     name_lower = filepath.name.lower()
 
     if amc_key == "kotak":
@@ -462,6 +547,28 @@ def parse_file(filepath: Path, amc_key: str) -> dict | None:
                     "holdings":    result["holdings"],
                 })
         return {"amc": "ppfas", "date": global_date, "source": str(filepath.name), "schemes": schemes}
+
+    if amc_key == "baroda":
+        index = _read_serial_index(wb)
+        schemes = []
+        global_date = None
+        for sheet_name in wb.sheetnames:
+            if sheet_name.lower() in ("index", "notes", "disclaimer"):
+                continue
+            scheme_name, date_str, holdings = _parse_baroda_sheet(wb[sheet_name])
+            if not holdings:
+                continue
+            if date_str and not global_date:
+                global_date = date_str
+            schemes.append({
+                "sheet_code":  sheet_name,
+                "scheme_code": None,
+                "scheme_name": index.get(sheet_name, scheme_name),
+                "holdings":    holdings,
+            })
+        if not schemes:
+            return None
+        return {"amc": "baroda", "date": global_date, "source": str(filepath.name), "schemes": schemes}
 
     if amc_key == "bandhan":
         ws = wb.active

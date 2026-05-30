@@ -48,6 +48,7 @@ AMC_PATTERNS = [
     (r"franklin",             "franklin"),
     (r"edel",                 "edelweiss"),
     (r"bandhan",              "bandhan"),
+    (r"bobbnp|baroda.bnp",    "baroda"),
 ]
 
 
