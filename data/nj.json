@@ -1,0 +1,2818 @@
+{
+  "amc": "nj",
+  "date": "2024-02-29",
+  "source": "https://downloads.njmutualfund.com/uploads/Monthly%20Portfolio%20Disclosure%20February%202024.-20240307114804.xlsx",
+  "schemes": [
+    {
+      "sheet_code": "NJABF",
+      "scheme_code": null,
+      "scheme_name": "NJ Arbitrage Fund",
+      "holdings": [
+        {
+          "isin": "INE040A01034",
+          "name": "HDFC Bank Limited",
+          "sector": "Banks",
+          "quantity": 205150.0,
+          "market_value_lakh": 2879.0751,
+          "pct_nav": 8.03
+        },
+        {
+          "isin": "INE090A01021",
+          "name": "ICICI Bank Limited",
+          "sector": "Banks",
+          "quantity": 147700.0,
+          "market_value_lakh": 1554.0994,
+          "pct_nav": 4.34
+        },
+        {
+          "isin": "INE423A01024",
+          "name": "Adani Enterprises Limited",
+          "sector": "Metals & Minerals Trading",
+          "quantity": 45000.0,
+          "market_value_lakh": 1478.43,
+          "pct_nav": 4.12
+        },
+        {
+          "isin": "INE002A01018",
+          "name": "Reliance Industries Limited",
+          "sector": "Petroleum Products",
+          "quantity": 50000.0,
+          "market_value_lakh": 1460.8,
+          "pct_nav": 4.08
+        },
+        {
+          "isin": "INE155A01022",
+          "name": "Tata Motors Limited",
+          "sector": "Automobiles",
+          "quantity": 152475.0,
+          "market_value_lakh": 1448.8175,
+          "pct_nav": 4.04
+        },
+        {
+          "isin": "INE256A01028",
+          "name": "Zee Entertainment Enterprises Limited",
+          "sector": "Entertainment",
+          "quantity": 855000.0,
+          "market_value_lakh": 1376.1225,
+          "pct_nav": 3.84
+        },
+        {
+          "isin": "INE854D01024",
+          "name": "United Spirits Limited",
+          "sector": "Beverages",
+          "quantity": 94500.0,
+          "market_value_lakh": 1101.7283,
+          "pct_nav": 3.07
+        },
+        {
+          "isin": "INE062A01020",
+          "name": "State Bank of India",
+          "sector": "Banks",
+          "quantity": 147000.0,
+          "market_value_lakh": 1099.707,
+          "pct_nav": 3.07
+        },
+        {
+          "isin": "INE028A01039",
+          "name": "Bank of Baroda",
+          "sector": "Banks",
+          "quantity": 353925.0,
+          "market_value_lakh": 939.4939,
+          "pct_nav": 2.62
+        },
+        {
+          "isin": "INE079A01024",
+          "name": "Ambuja Cements Limited",
+          "sector": "Cement & Cement Products",
+          "quantity": 135000.0,
+          "market_value_lakh": 817.965,
+          "pct_nav": 2.28
+        },
+        {
+          "isin": "INE047A01021",
+          "name": "Grasim Industries Limited",
+          "sector": "Cement & Cement Products",
+          "quantity": 31482.0,
+          "market_value_lakh": 689.8965,
+          "pct_nav": 1.92
+        },
+        {
+          "isin": "INE010B01027",
+          "name": "Zydus Lifesciences Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "quantity": 72900.0,
+          "market_value_lakh": 686.6451,
+          "pct_nav": 1.92
+        },
+        {
+          "isin": "INE238A01034",
+          "name": "Axis Bank Limited",
+          "sector": "Banks",
+          "quantity": 62500.0,
+          "market_value_lakh": 671.9375,
+          "pct_nav": 1.87
+        },
+        {
+          "isin": "INE376G01013",
+          "name": "Biocon Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "quantity": 217500.0,
+          "market_value_lakh": 601.3875,
+          "pct_nav": 1.68
+        },
+        {
+          "isin": "INE081A01020",
+          "name": "Tata Steel Limited",
+          "sector": "Ferrous Metals",
+          "quantity": 418000.0,
+          "market_value_lakh": 588.753,
+          "pct_nav": 1.64
+        },
+        {
+          "isin": "INE302A01020",
+          "name": "Exide Industries Limited",
+          "sector": "Auto Components",
+          "quantity": 172800.0,
+          "market_value_lakh": 553.4784,
+          "pct_nav": 1.54
+        },
+        {
+          "isin": "INE476A01014",
+          "name": "Canara Bank",
+          "sector": "Banks",
+          "quantity": 94500.0,
+          "market_value_lakh": 533.4053,
+          "pct_nav": 1.49
+        },
+        {
+          "isin": "INE038A01020",
+          "name": "Hindalco Industries Limited",
+          "sector": "Non - Ferrous Metals",
+          "quantity": 81200.0,
+          "market_value_lakh": 409.1262,
+          "pct_nav": 1.14
+        },
+        {
+          "isin": "INE242A01010",
+          "name": "Indian Oil Corporation Limited",
+          "sector": "Petroleum Products",
+          "quantity": 243750.0,
+          "market_value_lakh": 403.5281,
+          "pct_nav": 1.13
+        },
+        {
+          "isin": "INE154A01025",
+          "name": "ITC Limited",
+          "sector": "Diversified FMCG",
+          "quantity": 96000.0,
+          "market_value_lakh": 390.048,
+          "pct_nav": 1.09
+        },
+        {
+          "isin": "INE018A01030",
+          "name": "Larsen & Toubro Limited",
+          "sector": "Construction",
+          "quantity": 11100.0,
+          "market_value_lakh": 386.0081,
+          "pct_nav": 1.08
+        },
+        {
+          "isin": "INE669E01016",
+          "name": "Vodafone Idea Limited",
+          "sector": "Telecom - Services",
+          "quantity": 2640000.0,
+          "market_value_lakh": 360.36,
+          "pct_nav": 1.01
+        },
+        {
+          "isin": "INE669C01036",
+          "name": "Tech Mahindra Limited",
+          "sector": "IT - Software",
+          "quantity": 27600.0,
+          "market_value_lakh": 351.5826,
+          "pct_nav": 0.98
+        },
+        {
+          "isin": "INE016A01026",
+          "name": "Dabur India Limited",
+          "sector": "Personal Products",
+          "quantity": 63750.0,
+          "market_value_lakh": 343.0706,
+          "pct_nav": 0.96
+        },
+        {
+          "isin": "INE935N01020",
+          "name": "Dixon Technologies (India) Limited",
+          "sector": "Consumer Durables",
+          "quantity": 5000.0,
+          "market_value_lakh": 334.1925,
+          "pct_nav": 0.93
+        },
+        {
+          "isin": "INE296A01024",
+          "name": "Bajaj Finance Limited",
+          "sector": "Finance",
+          "quantity": 5125.0,
+          "market_value_lakh": 332.8867,
+          "pct_nav": 0.93
+        },
+        {
+          "isin": "INE030A01027",
+          "name": "Hindustan Unilever Limited",
+          "sector": "Diversified FMCG",
+          "quantity": 12300.0,
+          "market_value_lakh": 296.7129,
+          "pct_nav": 0.83
+        },
+        {
+          "isin": "INE123W01016",
+          "name": "SBI Life Insurance Company Limited",
+          "sector": "Insurance",
+          "quantity": 18000.0,
+          "market_value_lakh": 279.459,
+          "pct_nav": 0.78
+        },
+        {
+          "isin": "INE775A01035",
+          "name": "Samvardhana Motherson International Limited",
+          "sector": "Auto Components",
+          "quantity": 227200.0,
+          "market_value_lakh": 270.8224,
+          "pct_nav": 0.76
+        },
+        {
+          "isin": "INE918I01026",
+          "name": "Bajaj Finserv Limited",
+          "sector": "Finance",
+          "quantity": 15500.0,
+          "market_value_lakh": 247.039,
+          "pct_nav": 0.69
+        },
+        {
+          "isin": "INE196A01026",
+          "name": "Marico Limited",
+          "sector": "Agricultural Food & other Products",
+          "quantity": 42000.0,
+          "market_value_lakh": 219.492,
+          "pct_nav": 0.61
+        },
+        {
+          "isin": "INE009A01021",
+          "name": "Infosys Limited",
+          "sector": "IT - Software",
+          "quantity": 12800.0,
+          "market_value_lakh": 214.2592,
+          "pct_nav": 0.6
+        },
+        {
+          "isin": "INE043D01016",
+          "name": "IDFC Limited",
+          "sector": "Finance",
+          "quantity": 165000.0,
+          "market_value_lakh": 192.1425,
+          "pct_nav": 0.54
+        },
+        {
+          "isin": "INE263A01024",
+          "name": "Bharat Electronics Limited",
+          "sector": "Aerospace & Defense",
+          "quantity": 91200.0,
+          "market_value_lakh": 187.0512,
+          "pct_nav": 0.52
+        },
+        {
+          "isin": "INE205A01025",
+          "name": "Vedanta Limited",
+          "sector": "Diversified Metals",
+          "quantity": 69000.0,
+          "market_value_lakh": 184.9545,
+          "pct_nav": 0.52
+        },
+        {
+          "isin": "INE237A01028",
+          "name": "Kotak Mahindra Bank Limited",
+          "sector": "Banks",
+          "quantity": 10000.0,
+          "market_value_lakh": 168.945,
+          "pct_nav": 0.47
+        },
+        {
+          "isin": "INE176B01034",
+          "name": "Havells India Limited",
+          "sector": "Consumer Durables",
+          "quantity": 10500.0,
+          "market_value_lakh": 160.7918,
+          "pct_nav": 0.45
+        },
+        {
+          "isin": "INE022Q01020",
+          "name": "Indian Energy Exchange Limited",
+          "sector": "Capital Markets",
+          "quantity": 112500.0,
+          "market_value_lakh": 159.9188,
+          "pct_nav": 0.45
+        },
+        {
+          "isin": "INE795G01014",
+          "name": "HDFC Life Insurance Company Limited",
+          "sector": "Insurance",
+          "quantity": 26400.0,
+          "market_value_lakh": 153.648,
+          "pct_nav": 0.43
+        },
+        {
+          "isin": "INE383A01012",
+          "name": "The India Cements Limited",
+          "sector": "Cement & Cement Products",
+          "quantity": 63800.0,
+          "market_value_lakh": 146.0063,
+          "pct_nav": 0.41
+        },
+        {
+          "isin": "INE012A01025",
+          "name": "ACC Limited",
+          "sector": "Cement & Cement Products",
+          "quantity": 4800.0,
+          "market_value_lakh": 126.2064,
+          "pct_nav": 0.35
+        },
+        {
+          "isin": "INE245A01021",
+          "name": "Tata Power Company Limited",
+          "sector": "Power",
+          "quantity": 33750.0,
+          "market_value_lakh": 125.4656,
+          "pct_nav": 0.35
+        },
+        {
+          "isin": "INE647A01010",
+          "name": "SRF Limited",
+          "sector": "Chemicals & Petrochemicals",
+          "quantity": 5250.0,
+          "market_value_lakh": 125.4566,
+          "pct_nav": 0.35
+        },
+        {
+          "isin": "INE361B01024",
+          "name": "Divi's Laboratories Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "quantity": 3200.0,
+          "market_value_lakh": 111.6416,
+          "pct_nav": 0.31
+        },
+        {
+          "isin": "INE646L01027",
+          "name": "InterGlobe Aviation Limited",
+          "sector": "Transport Services",
+          "quantity": 3000.0,
+          "market_value_lakh": 94.6605,
+          "pct_nav": 0.26
+        },
+        {
+          "isin": "INE335Y01020",
+          "name": "Indian Railway Catering And Tourism Corporation Limited",
+          "sector": "Leisure Services",
+          "quantity": 8750.0,
+          "market_value_lakh": 81.1475,
+          "pct_nav": 0.23
+        },
+        {
+          "isin": "INE733E01010",
+          "name": "NTPC Limited",
+          "sector": "Power",
+          "quantity": 24000.0,
+          "market_value_lakh": 80.544,
+          "pct_nav": 0.22
+        },
+        {
+          "isin": "INE117A01022",
+          "name": "ABB India Limited",
+          "sector": "Electrical Equipment",
+          "quantity": 1375.0,
+          "market_value_lakh": 74.8681,
+          "pct_nav": 0.21
+        },
+        {
+          "isin": "INE101A01026",
+          "name": "Mahindra & Mahindra Limited",
+          "sector": "Automobiles",
+          "quantity": 3500.0,
+          "market_value_lakh": 67.634,
+          "pct_nav": 0.19
+        },
+        {
+          "isin": "INE101D01020",
+          "name": "Granules India Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "quantity": 14000.0,
+          "market_value_lakh": 65.1,
+          "pct_nav": 0.18
+        },
+        {
+          "isin": "INE075A01022",
+          "name": "Wipro Limited",
+          "sector": "IT - Software",
+          "quantity": 10500.0,
+          "market_value_lakh": 54.453,
+          "pct_nav": 0.15
+        },
+        {
+          "isin": "INE603J01030",
+          "name": "PI Industries Limited",
+          "sector": "Fertilizers & Agrochemicals",
+          "quantity": 1250.0,
+          "market_value_lakh": 45.9088,
+          "pct_nav": 0.13
+        },
+        {
+          "isin": "INE021A01026",
+          "name": "Asian Paints Limited",
+          "sector": "Consumer Durables",
+          "quantity": 1400.0,
+          "market_value_lakh": 39.5066,
+          "pct_nav": 0.11
+        },
+        {
+          "isin": "INE749A01030",
+          "name": "Jindal Steel & Power Limited",
+          "sector": "Ferrous Metals",
+          "quantity": 5000.0,
+          "market_value_lakh": 38.8125,
+          "pct_nav": 0.11
+        },
+        {
+          "isin": "INE114A01011",
+          "name": "Steel Authority of India Limited",
+          "sector": "Ferrous Metals",
+          "quantity": 32000.0,
+          "market_value_lakh": 38.784,
+          "pct_nav": 0.11
+        },
+        {
+          "isin": "INE119A01028",
+          "name": "Balrampur Chini Mills Limited",
+          "sector": "Agricultural Food & other Products",
+          "quantity": 9600.0,
+          "market_value_lakh": 35.8032,
+          "pct_nav": 0.1
+        },
+        {
+          "isin": "INE318A01026",
+          "name": "Pidilite Industries Limited",
+          "sector": "Chemicals & Petrochemicals",
+          "quantity": 1250.0,
+          "market_value_lakh": 34.2,
+          "pct_nav": 0.1
+        },
+        {
+          "isin": "INE019A01038",
+          "name": "JSW Steel Limited",
+          "sector": "Ferrous Metals",
+          "quantity": 4050.0,
+          "market_value_lakh": 32.4041,
+          "pct_nav": 0.09
+        },
+        {
+          "isin": "INE765G01017",
+          "name": "ICICI Lombard General Insurance Company Limited",
+          "sector": "Insurance",
+          "quantity": 1500.0,
+          "market_value_lakh": 25.6763,
+          "pct_nav": 0.07
+        },
+        {
+          "isin": "INE280A01028",
+          "name": "Titan Company Limited",
+          "sector": "Consumer Durables",
+          "quantity": 700.0,
+          "market_value_lakh": 25.3708,
+          "pct_nav": 0.07
+        },
+        {
+          "isin": "INE585B01010",
+          "name": "Maruti Suzuki India Limited",
+          "sector": "Automobiles",
+          "quantity": 200.0,
+          "market_value_lakh": 22.5767,
+          "pct_nav": 0.06
+        },
+        {
+          "isin": "INE935A01035",
+          "name": "Glenmark Pharmaceuticals Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "quantity": 2175.0,
+          "market_value_lakh": 20.1209,
+          "pct_nav": 0.06
+        },
+        {
+          "isin": "INE437A01024",
+          "name": "Apollo Hospitals Enterprise Limited",
+          "sector": "Healthcare Services",
+          "quantity": 250.0,
+          "market_value_lakh": 15.254,
+          "pct_nav": 0.04
+        },
+        {
+          "isin": "INE397D01024",
+          "name": "Bharti Airtel Limited",
+          "sector": "Telecom - Services",
+          "quantity": 950.0,
+          "market_value_lakh": 10.6718,
+          "pct_nav": 0.03
+        },
+        {
+          "isin": "INE726G01019",
+          "name": "ICICI Prudential Life Insurance Company Limited",
+          "sector": "Insurance",
+          "quantity": 1500.0,
+          "market_value_lakh": 7.9898,
+          "pct_nav": 0.02
+        },
+        {
+          "isin": "IN002023Y375",
+          "name": "182 Days Tbill (MD 06/06/2024)",
+          "sector": "Sovereign",
+          "quantity": 1000000.0,
+          "market_value_lakh": 981.756,
+          "pct_nav": 2.74
+        },
+        {
+          "isin": "IN002023Y284",
+          "name": "182 Days Tbill (MD 04/04/2024)",
+          "sector": "Sovereign",
+          "quantity": 500000.0,
+          "market_value_lakh": 496.83,
+          "pct_nav": 1.39
+        },
+        {
+          "isin": "IN002023X427",
+          "name": "91 Days Tbill (MD 11/04/2024)",
+          "sector": "Sovereign",
+          "quantity": 500000.0,
+          "market_value_lakh": 496.182,
+          "pct_nav": 1.38
+        },
+        {
+          "isin": "IN002023Y300",
+          "name": "182 Days Tbill (MD 18/04/2024)",
+          "sector": "Sovereign",
+          "quantity": 500000.0,
+          "market_value_lakh": 495.523,
+          "pct_nav": 1.38
+        },
+        {
+          "isin": "IN002023Y326",
+          "name": "182 Days Tbill (MD 02/05/2024)",
+          "sector": "Sovereign",
+          "quantity": 500000.0,
+          "market_value_lakh": 494.249,
+          "pct_nav": 1.38
+        },
+        {
+          "isin": "IN002023Y342",
+          "name": "182 Days Tbill (MD 16/05/2024)",
+          "sector": "Sovereign",
+          "quantity": 500000.0,
+          "market_value_lakh": 492.9385,
+          "pct_nav": 1.38
+        },
+        {
+          "isin": "IN002023Y367",
+          "name": "182 Days Tbill (MD 30/05/2024)",
+          "sector": "Sovereign",
+          "quantity": 500000.0,
+          "market_value_lakh": 491.691,
+          "pct_nav": 1.37
+        },
+        {
+          "isin": "IN002023Y433",
+          "name": "182 Days Tbill (MD 18/07/2024)",
+          "sector": "Sovereign",
+          "quantity": 500000.0,
+          "market_value_lakh": 486.8615,
+          "pct_nav": 1.36
+        },
+        {
+          "isin": "NIL",
+          "name": "1. Security in default beyond its maturiy date",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "11.0975",
+          "name": "NJ Arbitrage Fund - Direct Growth",
+          "sector": "11.1483",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "10.9863",
+          "name": "NJ Arbitrage Fund - Regular Growth",
+          "sector": "11.0305",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "3. Total Dividend (Net) declared during the month",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "4. Bonus was declared during the month",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "5. Investment in Repo of Corporate Debt Securities during the month",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "6. Investment in foreign securities/ADRs/GDRs at the end of the month",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "0.74 Times",
+          "name": "7. Portfolio Turnover Ratio",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "8. Margin Deposits includes Margin money placed on derivatives other than margin money placed with bank",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "9. Total value and percentage of Illiquid Equity shares",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "41 days",
+          "name": "10. Average Maturity for the debt securities held (as on February 29, 2024)",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "11. Instances of fair valuation of Securities or Deviation in valuation from what is provided by valuation agencies",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "Nil",
+          "name": "12. Deviation in the mandated asset allocation pursuant to SEBI Master Circular \n SEBI/HO/IMD/IMD-PoD-1/P/CIR/2023/74 dated May 19, 2023",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        }
+      ]
+    },
+    {
+      "sheet_code": "NJBAF",
+      "scheme_code": null,
+      "scheme_name": "NJ Balanced Advantage Fund",
+      "holdings": [
+        {
+          "isin": "INE040A01034",
+          "name": "HDFC Bank Limited",
+          "sector": "Banks",
+          "quantity": 2201100.0,
+          "market_value_lakh": 30890.2374,
+          "pct_nav": 7.77
+        },
+        {
+          "isin": "INE090A01021",
+          "name": "ICICI Bank Limited",
+          "sector": "Banks",
+          "quantity": 1464400.0,
+          "market_value_lakh": 15408.4168,
+          "pct_nav": 3.87
+        },
+        {
+          "isin": "INE066F01020",
+          "name": "Hindustan Aeronautics Limited",
+          "sector": "Aerospace & Defense",
+          "quantity": 412089.0,
+          "market_value_lakh": 12709.0308,
+          "pct_nav": 3.2
+        },
+        {
+          "isin": "INE263A01024",
+          "name": "Bharat Electronics Limited",
+          "sector": "Aerospace & Defense",
+          "quantity": 6038722.0,
+          "market_value_lakh": 12385.4188,
+          "pct_nav": 3.11
+        },
+        {
+          "isin": "INE269A01021",
+          "name": "Sonata Software Limited",
+          "sector": "IT - Software",
+          "quantity": 1315660.0,
+          "market_value_lakh": 10669.3448,
+          "pct_nav": 2.68
+        },
+        {
+          "isin": "INE752E01010",
+          "name": "Power Grid Corporation of India Limited",
+          "sector": "Power",
+          "quantity": 3482967.0,
+          "market_value_lakh": 9851.5722,
+          "pct_nav": 2.48
+        },
+        {
+          "isin": "INE860A01027",
+          "name": "HCL Technologies Limited",
+          "sector": "IT - Software",
+          "quantity": 563184.0,
+          "market_value_lakh": 9370.537,
+          "pct_nav": 2.36
+        },
+        {
+          "isin": "INE154A01025",
+          "name": "ITC Limited",
+          "sector": "Diversified FMCG",
+          "quantity": 2299452.0,
+          "market_value_lakh": 9342.6735,
+          "pct_nav": 2.35
+        },
+        {
+          "isin": "INE007A01025",
+          "name": "CRISIL Limited",
+          "sector": "Finance",
+          "quantity": 177097.0,
+          "market_value_lakh": 8885.2221,
+          "pct_nav": 2.23
+        },
+        {
+          "isin": "INE259A01022",
+          "name": "Colgate Palmolive (India) Limited",
+          "sector": "Personal Products",
+          "quantity": 346896.0,
+          "market_value_lakh": 8765.1947,
+          "pct_nav": 2.2
+        },
+        {
+          "isin": "INE280A01028",
+          "name": "Titan Company Limited",
+          "sector": "Consumer Durables",
+          "quantity": 241733.0,
+          "market_value_lakh": 8761.3709,
+          "pct_nav": 2.2
+        },
+        {
+          "isin": "INE002A01018",
+          "name": "Reliance Industries Limited",
+          "sector": "Petroleum Products",
+          "quantity": 278500.0,
+          "market_value_lakh": 8136.656,
+          "pct_nav": 2.05
+        },
+        {
+          "isin": "INE356A01018",
+          "name": "MphasiS Limited",
+          "sector": "IT - Software",
+          "quantity": 292706.0,
+          "market_value_lakh": 7661.1405,
+          "pct_nav": 1.93
+        },
+        {
+          "isin": "INE881D01027",
+          "name": "Oracle Financial Services Software Limited",
+          "sector": "IT - Software",
+          "quantity": 99364.0,
+          "market_value_lakh": 7624.1997,
+          "pct_nav": 1.92
+        },
+        {
+          "isin": "INE214T01019",
+          "name": "LTIMindtree Limited",
+          "sector": "IT - Software",
+          "quantity": 142255.0,
+          "market_value_lakh": 7540.7242,
+          "pct_nav": 1.9
+        },
+        {
+          "isin": "INE274J01014",
+          "name": "Oil India Limited",
+          "sector": "Oil",
+          "quantity": 1366293.0,
+          "market_value_lakh": 7467.4744,
+          "pct_nav": 1.88
+        },
+        {
+          "isin": "INE020B01018",
+          "name": "REC Limited",
+          "sector": "Finance",
+          "quantity": 1421888.0,
+          "market_value_lakh": 6285.4559,
+          "pct_nav": 1.58
+        },
+        {
+          "isin": "INE262H01013",
+          "name": "Persistent Systems Limited",
+          "sector": "IT - Software",
+          "quantity": 70474.0,
+          "market_value_lakh": 6082.1529,
+          "pct_nav": 1.53
+        },
+        {
+          "isin": "INE245A01021",
+          "name": "Tata Power Company Limited",
+          "sector": "Power",
+          "quantity": 1633500.0,
+          "market_value_lakh": 6072.5363,
+          "pct_nav": 1.53
+        },
+        {
+          "isin": "INE522F01014",
+          "name": "Coal India Limited",
+          "sector": "Consumable Fuels",
+          "quantity": 1384668.0,
+          "market_value_lakh": 6046.8452,
+          "pct_nav": 1.52
+        },
+        {
+          "isin": "INE494B01023",
+          "name": "TVS Motor Company Limited",
+          "sector": "Automobiles",
+          "quantity": 268410.0,
+          "market_value_lakh": 5741.8267,
+          "pct_nav": 1.44
+        },
+        {
+          "isin": "INE763G01038",
+          "name": "ICICI Securities Limited",
+          "sector": "Capital Markets",
+          "quantity": 657475.0,
+          "market_value_lakh": 5370.9133,
+          "pct_nav": 1.35
+        },
+        {
+          "isin": "INE155A01022",
+          "name": "Tata Motors Limited",
+          "sector": "Automobiles",
+          "quantity": 560025.0,
+          "market_value_lakh": 5321.3576,
+          "pct_nav": 1.34
+        },
+        {
+          "isin": "INE239A01024",
+          "name": "Nestle India Limited",
+          "sector": "Food Products",
+          "quantity": 202747.0,
+          "market_value_lakh": 5263.7176,
+          "pct_nav": 1.32
+        },
+        {
+          "isin": "INE591G01017",
+          "name": "Coforge Limited",
+          "sector": "IT - Software",
+          "quantity": 80069.0,
+          "market_value_lakh": 5247.7623,
+          "pct_nav": 1.32
+        },
+        {
+          "isin": "INE028A01039",
+          "name": "Bank of Baroda",
+          "sector": "Banks",
+          "quantity": 1848600.0,
+          "market_value_lakh": 4907.1087,
+          "pct_nav": 1.23
+        },
+        {
+          "isin": "INE062A01020",
+          "name": "State Bank of India",
+          "sector": "Banks",
+          "quantity": 645000.0,
+          "market_value_lakh": 4825.245,
+          "pct_nav": 1.21
+        },
+        {
+          "isin": "INE669C01036",
+          "name": "Tech Mahindra Limited",
+          "sector": "IT - Software",
+          "quantity": 361719.0,
+          "market_value_lakh": 4607.7575,
+          "pct_nav": 1.16
+        },
+        {
+          "isin": "INE572A01036",
+          "name": "JB Chemicals & Pharmaceuticals Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "quantity": 275686.0,
+          "market_value_lakh": 4305.8018,
+          "pct_nav": 1.08
+        },
+        {
+          "isin": "INE030A01027",
+          "name": "Hindustan Unilever Limited",
+          "sector": "Diversified FMCG",
+          "quantity": 177000.0,
+          "market_value_lakh": 4269.771,
+          "pct_nav": 1.07
+        },
+        {
+          "isin": "INE195A01028",
+          "name": "Supreme Industries Limited",
+          "sector": "Industrial Products",
+          "quantity": 99076.0,
+          "market_value_lakh": 4112.2485,
+          "pct_nav": 1.03
+        },
+        {
+          "isin": "INE421D01022",
+          "name": "CCL Products (India) Limited",
+          "sector": "Agricultural Food & other Products",
+          "quantity": 632813.0,
+          "market_value_lakh": 3985.1399,
+          "pct_nav": 1.0
+        },
+        {
+          "isin": "INE296A01024",
+          "name": "Bajaj Finance Limited",
+          "sector": "Finance",
+          "quantity": 54125.0,
+          "market_value_lakh": 3515.6082,
+          "pct_nav": 0.88
+        },
+        {
+          "isin": "INE585B01010",
+          "name": "Maruti Suzuki India Limited",
+          "sector": "Automobiles",
+          "quantity": 30400.0,
+          "market_value_lakh": 3431.6584,
+          "pct_nav": 0.86
+        },
+        {
+          "isin": "INE012A01025",
+          "name": "ACC Limited",
+          "sector": "Cement & Cement Products",
+          "quantity": 125700.0,
+          "market_value_lakh": 3305.0301,
+          "pct_nav": 0.83
+        },
+        {
+          "isin": "INE603J01030",
+          "name": "PI Industries Limited",
+          "sector": "Fertilizers & Agrochemicals",
+          "quantity": 86250.0,
+          "market_value_lakh": 3167.7038,
+          "pct_nav": 0.8
+        },
+        {
+          "isin": "INE423A01024",
+          "name": "Adani Enterprises Limited",
+          "sector": "Metals & Minerals Trading",
+          "quantity": 93000.0,
+          "market_value_lakh": 3055.422,
+          "pct_nav": 0.77
+        },
+        {
+          "isin": "INE079A01024",
+          "name": "Ambuja Cements Limited",
+          "sector": "Cement & Cement Products",
+          "quantity": 464400.0,
+          "market_value_lakh": 2813.7996,
+          "pct_nav": 0.71
+        },
+        {
+          "isin": "INE018A01030",
+          "name": "Larsen & Toubro Limited",
+          "sector": "Construction",
+          "quantity": 75600.0,
+          "market_value_lakh": 2629.0278,
+          "pct_nav": 0.66
+        },
+        {
+          "isin": "INE467B01029",
+          "name": "Tata Consultancy Services Limited",
+          "sector": "IT - Software",
+          "quantity": 64099.0,
+          "market_value_lakh": 2624.9181,
+          "pct_nav": 0.66
+        },
+        {
+          "isin": "INE009A01021",
+          "name": "Infosys Limited",
+          "sector": "IT - Software",
+          "quantity": 156674.0,
+          "market_value_lakh": 2622.5661,
+          "pct_nav": 0.66
+        },
+        {
+          "isin": "INE476A01014",
+          "name": "Canara Bank",
+          "sector": "Banks",
+          "quantity": 445500.0,
+          "market_value_lakh": 2514.6248,
+          "pct_nav": 0.63
+        },
+        {
+          "isin": "INE917I01010",
+          "name": "Bajaj Auto Limited",
+          "sector": "Automobiles",
+          "quantity": 31569.0,
+          "market_value_lakh": 2496.9027,
+          "pct_nav": 0.63
+        },
+        {
+          "isin": "INE918I01026",
+          "name": "Bajaj Finserv Limited",
+          "sector": "Finance",
+          "quantity": 154000.0,
+          "market_value_lakh": 2454.452,
+          "pct_nav": 0.62
+        },
+        {
+          "isin": "INE335Y01020",
+          "name": "Indian Railway Catering And Tourism Corporation Limited",
+          "sector": "Leisure Services",
+          "quantity": 235270.0,
+          "market_value_lakh": 2181.894,
+          "pct_nav": 0.55
+        },
+        {
+          "isin": "INE237A01028",
+          "name": "Kotak Mahindra Bank Limited",
+          "sector": "Banks",
+          "quantity": 128000.0,
+          "market_value_lakh": 2162.496,
+          "pct_nav": 0.54
+        },
+        {
+          "isin": "INE361B01024",
+          "name": "Divi's Laboratories Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "quantity": 60128.0,
+          "market_value_lakh": 2097.7457,
+          "pct_nav": 0.53
+        },
+        {
+          "isin": "INE238A01034",
+          "name": "Axis Bank Limited",
+          "sector": "Banks",
+          "quantity": 170625.0,
+          "market_value_lakh": 1834.3894,
+          "pct_nav": 0.46
+        },
+        {
+          "isin": "INE121J01017",
+          "name": "Indus Towers Limited",
+          "sector": "Telecom - Services",
+          "quantity": 649400.0,
+          "market_value_lakh": 1641.6832,
+          "pct_nav": 0.41
+        },
+        {
+          "isin": "INE047A01021",
+          "name": "Grasim Industries Limited",
+          "sector": "Cement & Cement Products",
+          "quantity": 74889.0,
+          "market_value_lakh": 1641.1175,
+          "pct_nav": 0.41
+        },
+        {
+          "isin": "INE749A01030",
+          "name": "Jindal Steel & Power Limited",
+          "sector": "Ferrous Metals",
+          "quantity": 198750.0,
+          "market_value_lakh": 1542.7969,
+          "pct_nav": 0.39
+        },
+        {
+          "isin": "INE256A01028",
+          "name": "Zee Entertainment Enterprises Limited",
+          "sector": "Entertainment",
+          "quantity": 840000.0,
+          "market_value_lakh": 1351.98,
+          "pct_nav": 0.34
+        },
+        {
+          "isin": "INE196A01026",
+          "name": "Marico Limited",
+          "sector": "Agricultural Food & other Products",
+          "quantity": 232888.0,
+          "market_value_lakh": 1217.0727,
+          "pct_nav": 0.31
+        },
+        {
+          "isin": "INE213A01029",
+          "name": "Oil & Natural Gas Corporation Limited",
+          "sector": "Oil",
+          "quantity": 454300.0,
+          "market_value_lakh": 1202.0778,
+          "pct_nav": 0.3
+        },
+        {
+          "isin": "INE129A01019",
+          "name": "GAIL (India) Limited",
+          "sector": "Gas",
+          "quantity": 654225.0,
+          "market_value_lakh": 1192.3251,
+          "pct_nav": 0.3
+        },
+        {
+          "isin": "INE298J01013",
+          "name": "Nippon Life India Asset Management Limited",
+          "sector": "Capital Markets",
+          "quantity": 184911.0,
+          "market_value_lakh": 953.4936,
+          "pct_nav": 0.24
+        },
+        {
+          "isin": "INE081A01020",
+          "name": "Tata Steel Limited",
+          "sector": "Ferrous Metals",
+          "quantity": 676500.0,
+          "market_value_lakh": 952.8503,
+          "pct_nav": 0.24
+        },
+        {
+          "isin": "INE437A01024",
+          "name": "Apollo Hospitals Enterprise Limited",
+          "sector": "Healthcare Services",
+          "quantity": 15000.0,
+          "market_value_lakh": 915.24,
+          "pct_nav": 0.23
+        },
+        {
+          "isin": "INE172A01027",
+          "name": "Castrol India Limited",
+          "sector": "Petroleum Products",
+          "quantity": 438480.0,
+          "market_value_lakh": 913.7923,
+          "pct_nav": 0.23
+        },
+        {
+          "isin": "INE002S01010",
+          "name": "Mahanagar Gas Limited",
+          "sector": "Gas",
+          "quantity": 59017.0,
+          "market_value_lakh": 876.0188,
+          "pct_nav": 0.22
+        },
+        {
+          "isin": "INE127D01025",
+          "name": "HDFC Asset Management Company Limited",
+          "sector": "Capital Markets",
+          "quantity": 22929.0,
+          "market_value_lakh": 860.5254,
+          "pct_nav": 0.22
+        },
+        {
+          "isin": "INE736A01011",
+          "name": "Central Depository Services (India) Limited",
+          "sector": "Capital Markets",
+          "quantity": 44644.0,
+          "market_value_lakh": 855.8924,
+          "pct_nav": 0.22
+        },
+        {
+          "isin": "INE685A01028",
+          "name": "Torrent Pharmaceuticals Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "quantity": 31470.0,
+          "market_value_lakh": 839.0217,
+          "pct_nav": 0.21
+        },
+        {
+          "isin": "INE885A01032",
+          "name": "Amara Raja Energy & Mobility Ltd",
+          "sector": "Auto Components",
+          "quantity": 95242.0,
+          "market_value_lakh": 799.0328,
+          "pct_nav": 0.2
+        },
+        {
+          "isin": "INE038A01020",
+          "name": "Hindalco Industries Limited",
+          "sector": "Non - Ferrous Metals",
+          "quantity": 155400.0,
+          "market_value_lakh": 782.9829,
+          "pct_nav": 0.2
+        },
+        {
+          "isin": "INE171A01029",
+          "name": "The Federal Bank Limited",
+          "sector": "Banks",
+          "quantity": 515000.0,
+          "market_value_lakh": 774.56,
+          "pct_nav": 0.19
+        },
+        {
+          "isin": "INE646L01027",
+          "name": "InterGlobe Aviation Limited",
+          "sector": "Transport Services",
+          "quantity": 24300.0,
+          "market_value_lakh": 766.7501,
+          "pct_nav": 0.19
+        },
+        {
+          "isin": "INE358A01014",
+          "name": "Abbott India Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "quantity": 2619.0,
+          "market_value_lakh": 744.6917,
+          "pct_nav": 0.19
+        },
+        {
+          "isin": "INE182A01018",
+          "name": "Pfizer Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "quantity": 15727.0,
+          "market_value_lakh": 724.2126,
+          "pct_nav": 0.18
+        },
+        {
+          "isin": "INE010V01017",
+          "name": "L&T Technology Services Limited",
+          "sector": "IT - Services",
+          "quantity": 13266.0,
+          "market_value_lakh": 703.4363,
+          "pct_nav": 0.18
+        },
+        {
+          "isin": "INE775A01035",
+          "name": "Samvardhana Motherson International Limited",
+          "sector": "Auto Components",
+          "quantity": 575100.0,
+          "market_value_lakh": 685.5192,
+          "pct_nav": 0.17
+        },
+        {
+          "isin": "INE216A01030",
+          "name": "Britannia Industries Limited",
+          "sector": "Food Products",
+          "quantity": 13379.0,
+          "market_value_lakh": 664.2941,
+          "pct_nav": 0.17
+        },
+        {
+          "isin": "INE545U01014",
+          "name": "Bandhan Bank Limited",
+          "sector": "Banks",
+          "quantity": 337500.0,
+          "market_value_lakh": 660.15,
+          "pct_nav": 0.17
+        },
+        {
+          "isin": "INE670A01012",
+          "name": "Tata Elxsi Limited",
+          "sector": "IT - Software",
+          "quantity": 8400.0,
+          "market_value_lakh": 656.1282,
+          "pct_nav": 0.17
+        },
+        {
+          "isin": "INE022Q01020",
+          "name": "Indian Energy Exchange Limited",
+          "sector": "Capital Markets",
+          "quantity": 459374.0,
+          "market_value_lakh": 653.0001,
+          "pct_nav": 0.16
+        },
+        {
+          "isin": "INE462A01022",
+          "name": "Bayer Cropscience Limited",
+          "sector": "Fertilizers & Agrochemicals",
+          "quantity": 11367.0,
+          "market_value_lakh": 644.435,
+          "pct_nav": 0.16
+        },
+        {
+          "isin": "INE854D01024",
+          "name": "United Spirits Limited",
+          "sector": "Beverages",
+          "quantity": 52500.0,
+          "market_value_lakh": 612.0713,
+          "pct_nav": 0.15
+        },
+        {
+          "isin": "INE536A01023",
+          "name": "Grindwell Norton Limited",
+          "sector": "Industrial Products",
+          "quantity": 29205.0,
+          "market_value_lakh": 609.9756,
+          "pct_nav": 0.15
+        },
+        {
+          "isin": "INE726G01019",
+          "name": "ICICI Prudential Life Insurance Company Limited",
+          "sector": "Insurance",
+          "quantity": 111000.0,
+          "market_value_lakh": 591.2415,
+          "pct_nav": 0.15
+        },
+        {
+          "isin": "INE021A01026",
+          "name": "Asian Paints Limited",
+          "sector": "Consumer Durables",
+          "quantity": 20605.0,
+          "market_value_lakh": 581.4525,
+          "pct_nav": 0.15
+        },
+        {
+          "isin": "INE169A01031",
+          "name": "Coromandel International Limited",
+          "sector": "Fertilizers & Agrochemicals",
+          "quantity": 52944.0,
+          "market_value_lakh": 569.8098,
+          "pct_nav": 0.14
+        },
+        {
+          "isin": "INE203G01027",
+          "name": "Indraprastha Gas Limited",
+          "sector": "Gas",
+          "quantity": 133405.0,
+          "market_value_lakh": 568.3053,
+          "pct_nav": 0.14
+        },
+        {
+          "isin": "INE640A01023",
+          "name": "SKF India Limited",
+          "sector": "Industrial Products",
+          "quantity": 11875.0,
+          "market_value_lakh": 560.8503,
+          "pct_nav": 0.14
+        },
+        {
+          "isin": "INE761H01022",
+          "name": "Page Industries Limited",
+          "sector": "Textiles & Apparels",
+          "quantity": 1557.0,
+          "market_value_lakh": 534.1997,
+          "pct_nav": 0.13
+        },
+        {
+          "isin": "INE176B01034",
+          "name": "Havells India Limited",
+          "sector": "Consumer Durables",
+          "quantity": 32500.0,
+          "market_value_lakh": 497.6888,
+          "pct_nav": 0.13
+        },
+        {
+          "isin": "INE742F01042",
+          "name": "Adani Ports and Special Economic Zone Limited",
+          "sector": "Transport Infrastructure",
+          "quantity": 33600.0,
+          "market_value_lakh": 443.688,
+          "pct_nav": 0.11
+        },
+        {
+          "isin": "INE318A01026",
+          "name": "Pidilite Industries Limited",
+          "sector": "Chemicals & Petrochemicals",
+          "quantity": 16000.0,
+          "market_value_lakh": 437.76,
+          "pct_nav": 0.11
+        },
+        {
+          "isin": "INE205A01025",
+          "name": "Vedanta Limited",
+          "sector": "Diversified Metals",
+          "quantity": 158700.0,
+          "market_value_lakh": 425.3954,
+          "pct_nav": 0.11
+        },
+        {
+          "isin": "INE117A01022",
+          "name": "ABB India Limited",
+          "sector": "Electrical Equipment",
+          "quantity": 7750.0,
+          "market_value_lakh": 421.9836,
+          "pct_nav": 0.11
+        },
+        {
+          "isin": "INE075A01022",
+          "name": "Wipro Limited",
+          "sector": "IT - Software",
+          "quantity": 78000.0,
+          "market_value_lakh": 404.508,
+          "pct_nav": 0.1
+        },
+        {
+          "isin": "INE733E01010",
+          "name": "NTPC Limited",
+          "sector": "Power",
+          "quantity": 120000.0,
+          "market_value_lakh": 402.72,
+          "pct_nav": 0.1
+        },
+        {
+          "isin": "INE647A01010",
+          "name": "SRF Limited",
+          "sector": "Chemicals & Petrochemicals",
+          "quantity": 16125.0,
+          "market_value_lakh": 385.3311,
+          "pct_nav": 0.1
+        },
+        {
+          "isin": "INE019A01038",
+          "name": "JSW Steel Limited",
+          "sector": "Ferrous Metals",
+          "quantity": 43200.0,
+          "market_value_lakh": 345.6432,
+          "pct_nav": 0.09
+        },
+        {
+          "isin": "INE016A01026",
+          "name": "Dabur India Limited",
+          "sector": "Personal Products",
+          "quantity": 63750.0,
+          "market_value_lakh": 343.0706,
+          "pct_nav": 0.09
+        },
+        {
+          "isin": "INE795G01014",
+          "name": "HDFC Life Insurance Company Limited",
+          "sector": "Insurance",
+          "quantity": 56100.0,
+          "market_value_lakh": 326.502,
+          "pct_nav": 0.08
+        },
+        {
+          "isin": "INE522D01027",
+          "name": "Manappuram Finance Limited",
+          "sector": "Finance",
+          "quantity": 180000.0,
+          "market_value_lakh": 317.16,
+          "pct_nav": 0.08
+        },
+        {
+          "isin": "INE029A01011",
+          "name": "Bharat Petroleum Corporation Limited",
+          "sector": "Petroleum Products",
+          "quantity": 45000.0,
+          "market_value_lakh": 271.7325,
+          "pct_nav": 0.07
+        },
+        {
+          "isin": "INE101A01026",
+          "name": "Mahindra & Mahindra Limited",
+          "sector": "Automobiles",
+          "quantity": 13300.0,
+          "market_value_lakh": 257.0092,
+          "pct_nav": 0.06
+        },
+        {
+          "isin": "INE765G01017",
+          "name": "ICICI Lombard General Insurance Company Limited",
+          "sector": "Insurance",
+          "quantity": 15000.0,
+          "market_value_lakh": 256.7625,
+          "pct_nav": 0.06
+        },
+        {
+          "isin": "INE123W01016",
+          "name": "SBI Life Insurance Company Limited",
+          "sector": "Insurance",
+          "quantity": 15000.0,
+          "market_value_lakh": 232.8825,
+          "pct_nav": 0.06
+        },
+        {
+          "isin": "INE102D01028",
+          "name": "Godrej Consumer Products Limited",
+          "sector": "Personal Products",
+          "quantity": 17500.0,
+          "market_value_lakh": 220.0975,
+          "pct_nav": 0.06
+        },
+        {
+          "isin": "INE242A01010",
+          "name": "Indian Oil Corporation Limited",
+          "sector": "Petroleum Products",
+          "quantity": 126750.0,
+          "market_value_lakh": 209.8346,
+          "pct_nav": 0.05
+        },
+        {
+          "isin": "INE669E01016",
+          "name": "Vodafone Idea Limited",
+          "sector": "Telecom - Services",
+          "quantity": 1360000.0,
+          "market_value_lakh": 185.64,
+          "pct_nav": 0.05
+        },
+        {
+          "isin": "INE397D01024",
+          "name": "Bharti Airtel Limited",
+          "sector": "Telecom - Services",
+          "quantity": 13300.0,
+          "market_value_lakh": 149.4056,
+          "pct_nav": 0.04
+        },
+        {
+          "isin": "INE663F01024",
+          "name": "Info Edge (India) Limited",
+          "sector": "Retailing",
+          "quantity": 1950.0,
+          "market_value_lakh": 102.7211,
+          "pct_nav": 0.03
+        },
+        {
+          "isin": "INE121A01024",
+          "name": "Cholamandalam Investment and Finance Company Ltd",
+          "sector": "Finance",
+          "quantity": 5625.0,
+          "market_value_lakh": 61.2675,
+          "pct_nav": 0.02
+        },
+        {
+          "isin": "INE095A01012",
+          "name": "IndusInd Bank Limited",
+          "sector": "Banks",
+          "quantity": 3500.0,
+          "market_value_lakh": 51.6215,
+          "pct_nav": 0.01
+        },
+        {
+          "isin": "INE226A01021",
+          "name": "Voltas Limited",
+          "sector": "Consumer Durables",
+          "quantity": 3000.0,
+          "market_value_lakh": 33.273,
+          "pct_nav": 0.01
+        },
+        {
+          "isin": "INE089A01023",
+          "name": "Dr. Reddy's Laboratories Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "quantity": 375.0,
+          "market_value_lakh": 24.0909,
+          "pct_nav": 0.01
+        },
+        {
+          "isin": "INE383A01012",
+          "name": "The India Cements Limited",
+          "sector": "Cement & Cement Products",
+          "quantity": 8700.0,
+          "market_value_lakh": 19.91,
+          "pct_nav": 0.01
+        },
+        {
+          "isin": "INE323A01026",
+          "name": "Bosch Limited",
+          "sector": "Auto Components",
+          "quantity": 50.0,
+          "market_value_lakh": 14.2954,
+          "pct_nav": null
+        },
+        {
+          "isin": "INE935A01035",
+          "name": "Glenmark Pharmaceuticals Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "quantity": 1450.0,
+          "market_value_lakh": 13.414,
+          "pct_nav": null
+        },
+        {
+          "isin": "INE070A01015",
+          "name": "Shree Cement Limited",
+          "sector": "Cement & Cement Products",
+          "quantity": 25.0,
+          "market_value_lakh": 6.3761,
+          "pct_nav": null
+        },
+        {
+          "isin": "IN002023Y243",
+          "name": "182 Days Tbill (MD 07/03/2024)",
+          "sector": "Sovereign",
+          "quantity": 2500000.0,
+          "market_value_lakh": 2497.315,
+          "pct_nav": 0.63
+        },
+        {
+          "isin": "IN002022Z507",
+          "name": "364 Days Tbill (MD 14/03/2024)",
+          "sector": "Sovereign",
+          "quantity": 2500000.0,
+          "market_value_lakh": 2494.155,
+          "pct_nav": 0.63
+        },
+        {
+          "isin": "IN002023X401",
+          "name": "91 Days Tbill (MD 28/03/2024)",
+          "sector": "Sovereign",
+          "quantity": 2500000.0,
+          "market_value_lakh": 2487.7625,
+          "pct_nav": 0.63
+        },
+        {
+          "isin": "IN002023X427",
+          "name": "91 Days Tbill (MD 11/04/2024)",
+          "sector": "Sovereign",
+          "quantity": 2500000.0,
+          "market_value_lakh": 2480.91,
+          "pct_nav": 0.62
+        },
+        {
+          "isin": "IN002023X450",
+          "name": "91 Days Tbill (MD 02/05/2024)",
+          "sector": "Sovereign",
+          "quantity": 2500000.0,
+          "market_value_lakh": 2471.245,
+          "pct_nav": 0.62
+        },
+        {
+          "isin": "IN002023Y326",
+          "name": "182 Days Tbill (MD 02/05/2024)",
+          "sector": "Sovereign",
+          "quantity": 2500000.0,
+          "market_value_lakh": 2471.245,
+          "pct_nav": 0.62
+        },
+        {
+          "isin": "IN002023Y342",
+          "name": "182 Days Tbill (MD 16/05/2024)",
+          "sector": "Sovereign",
+          "quantity": 2500000.0,
+          "market_value_lakh": 2464.6925,
+          "pct_nav": 0.62
+        },
+        {
+          "isin": "IN002023Y367",
+          "name": "182 Days Tbill (MD 30/05/2024)",
+          "sector": "Sovereign",
+          "quantity": 2500000.0,
+          "market_value_lakh": 2458.455,
+          "pct_nav": 0.62
+        },
+        {
+          "isin": "IN002023Y375",
+          "name": "182 Days Tbill (MD 06/06/2024)",
+          "sector": "Sovereign",
+          "quantity": 2500000.0,
+          "market_value_lakh": 2454.39,
+          "pct_nav": 0.62
+        },
+        {
+          "isin": "IN002023Y284",
+          "name": "182 Days Tbill (MD 04/04/2024)",
+          "sector": "Sovereign",
+          "quantity": 1350000.0,
+          "market_value_lakh": 1341.441,
+          "pct_nav": 0.34
+        },
+        {
+          "isin": "IN002023Y292",
+          "name": "182 Days Tbill (MD 11/04/2024)",
+          "sector": "Sovereign",
+          "quantity": 300000.0,
+          "market_value_lakh": 297.7092,
+          "pct_nav": 0.07
+        },
+        {
+          "isin": "NIL",
+          "name": "1. Security in default beyond its maturiy date",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "12.89",
+          "name": "NJ Balanced Advantage Fund - Direct IDCW",
+          "sector": "13.19",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "12.89",
+          "name": "NJ Balanced Advantage Fund - Direct Growth",
+          "sector": "13.19",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "12.51",
+          "name": "NJ Balanced Advantage Fund - Regular IDCW",
+          "sector": "12.79",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "12.51",
+          "name": "NJ Balanced Advantage Fund - Regular Growth",
+          "sector": "12.79",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "3. Total Dividend (Net) declared during the month",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "4. Bonus was declared during the month",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "5. Investment in Repo of Corporate Debt Securities during the month",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "6. Investment in foreign securities/ADRs/GDRs at the end of the month",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "0.49 Times",
+          "name": "7. Portfolio Turnover Ratio",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "8. Margin Deposits includes Margin money placed on derivatives other than margin money placed with bank",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "9. Total value and percentage of Illiquid Equity shares",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "24 days",
+          "name": "10. Average Maturity for the debt securities held (as on February 29, 2024)",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "11. Instances of fair valuation of Securities or Deviation in valuation from what is provided by valuation agencies",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "Nil",
+          "name": "12. Deviation in the mandated asset allocation pursuant to SEBI Master Circular \n SEBI/HO/IMD/IMD-PoD-1/P/CIR/2023/74 dated May 19, 2023",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        }
+      ]
+    },
+    {
+      "sheet_code": "NJOVERFD",
+      "scheme_code": null,
+      "scheme_name": "NJ Overnight Fund",
+      "holdings": [
+        {
+          "isin": "NJ Overnight Fund",
+          "name": "Scheme Name :",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "An open ended debt scheme investing in overnight securities with a relatively low interest rate risk and relatively low credit risk",
+          "name": "Description (if any)",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "0.0668",
+          "name": "Annualised Portfolio YTM* :",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "01 Day",
+          "name": "Macaulay Duration",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "01 Day",
+          "name": "Residual Maturity",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "2024-02-29 00:00:00",
+          "name": "As on (Date)",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "1. Security in default beyond its maturiy date",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "1098.2724",
+          "name": "NJ Overnight Fund - Direct Growth",
+          "sector": "1103.6972",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "1096.6131",
+          "name": "NJ Overnight Fund - Regular Growth",
+          "sector": "1101.9295",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NA",
+          "name": "3. Total Dividend (Net) declared during the period",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NA",
+          "name": "4. Bonus was declared during the period",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "5. Investment in Repo of Corporate Debt Securities during the period",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "6. Investment in foreign securities/ADRs/GDRs at the end of the period",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NA",
+          "name": "7. Margin Deposits includes Margin money placed on derivatives other than margin money placed with bank",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NA",
+          "name": "8. Total value and percentage of Illiquid Equity shares",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "01 Day",
+          "name": "10. Average Maturity for the debt securities held (as on February 29, 2024)",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "10. Instances of fair valuation of Securities or Deviation in valuation from what is provided by valuation agencies",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        }
+      ]
+    },
+    {
+      "sheet_code": "NJELSTCH",
+      "scheme_code": null,
+      "scheme_name": "NJ ELSS Tax Saver Fund",
+      "holdings": [
+        {
+          "isin": "INE066F01020",
+          "name": "Hindustan Aeronautics Limited",
+          "sector": "Aerospace & Defense",
+          "quantity": 28887.0,
+          "market_value_lakh": 890.8895,
+          "pct_nav": 5.07
+        },
+        {
+          "isin": "INE298J01013",
+          "name": "Nippon Life India Asset Management Limited",
+          "sector": "Capital Markets",
+          "quantity": 169835.0,
+          "market_value_lakh": 875.7542,
+          "pct_nav": 4.98
+        },
+        {
+          "isin": "INE917I01010",
+          "name": "Bajaj Auto Limited",
+          "sector": "Automobiles",
+          "quantity": 11000.0,
+          "market_value_lakh": 870.0285,
+          "pct_nav": 4.95
+        },
+        {
+          "isin": "INE269A01021",
+          "name": "Sonata Software Limited",
+          "sector": "IT - Software",
+          "quantity": 105309.0,
+          "market_value_lakh": 854.0033,
+          "pct_nav": 4.86
+        },
+        {
+          "isin": "INE263A01024",
+          "name": "Bharat Electronics Limited",
+          "sector": "Aerospace & Defense",
+          "quantity": 402728.0,
+          "market_value_lakh": 825.9951,
+          "pct_nav": 4.7
+        },
+        {
+          "isin": "INE002S01010",
+          "name": "Mahanagar Gas Limited",
+          "sector": "Gas",
+          "quantity": 54136.0,
+          "market_value_lakh": 803.5677,
+          "pct_nav": 4.57
+        },
+        {
+          "isin": "INE127D01025",
+          "name": "HDFC Asset Management Company Limited",
+          "sector": "Capital Markets",
+          "quantity": 21038.0,
+          "market_value_lakh": 789.5561,
+          "pct_nav": 4.49
+        },
+        {
+          "isin": "INE752E01010",
+          "name": "Power Grid Corporation of India Limited",
+          "sector": "Power",
+          "quantity": 278835.0,
+          "market_value_lakh": 788.6848,
+          "pct_nav": 4.49
+        },
+        {
+          "isin": "INE860A01027",
+          "name": "HCL Technologies Limited",
+          "sector": "IT - Software",
+          "quantity": 45111.0,
+          "market_value_lakh": 750.5794,
+          "pct_nav": 4.27
+        },
+        {
+          "isin": "INE763G01038",
+          "name": "ICICI Securities Limited",
+          "sector": "Capital Markets",
+          "quantity": 89632.0,
+          "market_value_lakh": 732.2038,
+          "pct_nav": 4.17
+        },
+        {
+          "isin": "INE591G01017",
+          "name": "Coforge Limited",
+          "sector": "IT - Software",
+          "quantity": 10912.0,
+          "market_value_lakh": 715.1779,
+          "pct_nav": 4.07
+        },
+        {
+          "isin": "INE007A01025",
+          "name": "CRISIL Limited",
+          "sector": "Finance",
+          "quantity": 14194.0,
+          "market_value_lakh": 712.1343,
+          "pct_nav": 4.05
+        },
+        {
+          "isin": "INE259A01022",
+          "name": "Colgate Palmolive (India) Limited",
+          "sector": "Personal Products",
+          "quantity": 27772.0,
+          "market_value_lakh": 701.729,
+          "pct_nav": 3.99
+        },
+        {
+          "isin": "INE358A01014",
+          "name": "Abbott India Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "quantity": 2403.0,
+          "market_value_lakh": 683.2738,
+          "pct_nav": 3.89
+        },
+        {
+          "isin": "INE009A01021",
+          "name": "Infosys Limited",
+          "sector": "IT - Software",
+          "quantity": 38802.0,
+          "market_value_lakh": 649.5067,
+          "pct_nav": 3.7
+        },
+        {
+          "isin": "INE467B01029",
+          "name": "Tata Consultancy Services Limited",
+          "sector": "IT - Software",
+          "quantity": 15785.0,
+          "market_value_lakh": 646.4115,
+          "pct_nav": 3.68
+        },
+        {
+          "isin": "INE010V01017",
+          "name": "L&T Technology Services Limited",
+          "sector": "IT - Services",
+          "quantity": 12172.0,
+          "market_value_lakh": 645.4264,
+          "pct_nav": 3.67
+        },
+        {
+          "isin": "INE356A01018",
+          "name": "MphasiS Limited",
+          "sector": "IT - Software",
+          "quantity": 23440.0,
+          "market_value_lakh": 613.5068,
+          "pct_nav": 3.49
+        },
+        {
+          "isin": "INE216A01030",
+          "name": "Britannia Industries Limited",
+          "sector": "Food Products",
+          "quantity": 12276.0,
+          "market_value_lakh": 609.528,
+          "pct_nav": 3.47
+        },
+        {
+          "isin": "INE670A01012",
+          "name": "Tata Elxsi Limited",
+          "sector": "IT - Software",
+          "quantity": 7706.0,
+          "market_value_lakh": 601.9195,
+          "pct_nav": 3.43
+        },
+        {
+          "isin": "INE462A01022",
+          "name": "Bayer Cropscience Limited",
+          "sector": "Fertilizers & Agrochemicals",
+          "quantity": 10429.0,
+          "market_value_lakh": 591.2565,
+          "pct_nav": 3.36
+        },
+        {
+          "isin": "INE214T01019",
+          "name": "LTIMindtree Limited",
+          "sector": "IT - Software",
+          "quantity": 10690.0,
+          "market_value_lakh": 566.6609,
+          "pct_nav": 3.22
+        },
+        {
+          "isin": "INE196A01026",
+          "name": "Marico Limited",
+          "sector": "Agricultural Food & other Products",
+          "quantity": 99168.0,
+          "market_value_lakh": 518.252,
+          "pct_nav": 2.95
+        },
+        {
+          "isin": "INE154A01025",
+          "name": "ITC Limited",
+          "sector": "Diversified FMCG",
+          "quantity": 125270.0,
+          "market_value_lakh": 508.972,
+          "pct_nav": 2.9
+        },
+        {
+          "isin": "INE021A01026",
+          "name": "Asian Paints Limited",
+          "sector": "Consumer Durables",
+          "quantity": 17620.0,
+          "market_value_lakh": 497.2188,
+          "pct_nav": 2.83
+        },
+        {
+          "isin": "NIL",
+          "name": "1. Security in default beyond its maturiy date",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "13.46",
+          "name": "NJ ELSS Tax Saver Fund - Direct IDCW",
+          "sector": "13.84",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "13.46",
+          "name": "NJ ELSS Tax Saver Fund - Direct Growth",
+          "sector": "13.84",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "13.31",
+          "name": "NJ ELSS Tax Saver Fund - Regular IDCW",
+          "sector": "13.66",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "13.31",
+          "name": "NJ ELSS Tax Saver Fund - Regular Growth",
+          "sector": "13.66",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "3. Total Dividend (Net) declared during the month",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "4. Bonus was declared during the month",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "5. Investment in Repo of Corporate Debt Securities during the month",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "6. Investment in foreign securities/ADRs/GDRs at the end of the month",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "7. Portfolio Turnover Ratio",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "8. Margin Deposits includes Margin money placed on derivatives other than margin money placed with bank",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "9. Total value and percentage of Illiquid Equity shares",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "01 Day",
+          "name": "10. Average Maturity for the debt securities held (as on February 29, 2024)",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "11. Instances of fair valuation of Securities or Deviation in valuation from what is provided by valuation agencies",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "12. Deviation in the mandated asset allocation pursuant to SEBI Master Circular \n SEBI/HO/IMD/IMD-PoD-1/P/CIR/2023/74 dated May 19, 2023",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        }
+      ]
+    },
+    {
+      "sheet_code": "NJFCP",
+      "scheme_code": null,
+      "scheme_name": "NJ Flexi Cap Fund",
+      "holdings": [
+        {
+          "isin": "INE066F01020",
+          "name": "Hindustan Aeronautics Limited",
+          "sector": "Aerospace & Defense",
+          "quantity": 179843.0,
+          "market_value_lakh": 5546.448,
+          "pct_nav": 5.55
+        },
+        {
+          "isin": "INE917I01010",
+          "name": "Bajaj Auto Limited",
+          "sector": "Automobiles",
+          "quantity": 68512.0,
+          "market_value_lakh": 5418.8539,
+          "pct_nav": 5.42
+        },
+        {
+          "isin": "INE269A01021",
+          "name": "Sonata Software Limited",
+          "sector": "IT - Software",
+          "quantity": 655932.0,
+          "market_value_lakh": 5319.2806,
+          "pct_nav": 5.32
+        },
+        {
+          "isin": "INE263A01024",
+          "name": "Bharat Electronics Limited",
+          "sector": "Aerospace & Defense",
+          "quantity": 2508475.0,
+          "market_value_lakh": 5144.8822,
+          "pct_nav": 5.15
+        },
+        {
+          "isin": "INE752E01010",
+          "name": "Power Grid Corporation of India Limited",
+          "sector": "Power",
+          "quantity": 1736782.0,
+          "market_value_lakh": 4912.4879,
+          "pct_nav": 4.92
+        },
+        {
+          "isin": "INE860A01027",
+          "name": "HCL Technologies Limited",
+          "sector": "IT - Software",
+          "quantity": 280955.0,
+          "market_value_lakh": 4674.6698,
+          "pct_nav": 4.68
+        },
+        {
+          "isin": "INE007A01025",
+          "name": "CRISIL Limited",
+          "sector": "Finance",
+          "quantity": 88407.0,
+          "market_value_lakh": 4435.5118,
+          "pct_nav": 4.44
+        },
+        {
+          "isin": "INE259A01022",
+          "name": "Colgate Palmolive (India) Limited",
+          "sector": "Personal Products",
+          "quantity": 172981.0,
+          "market_value_lakh": 4370.7974,
+          "pct_nav": 4.37
+        },
+        {
+          "isin": "INE280A01028",
+          "name": "Titan Company Limited",
+          "sector": "Consumer Durables",
+          "quantity": 110166.0,
+          "market_value_lakh": 3992.8565,
+          "pct_nav": 4.0
+        },
+        {
+          "isin": "INE356A01018",
+          "name": "MphasiS Limited",
+          "sector": "IT - Software",
+          "quantity": 145975.0,
+          "market_value_lakh": 3820.6767,
+          "pct_nav": 3.82
+        },
+        {
+          "isin": "INE881D01027",
+          "name": "Oracle Financial Services Software Limited",
+          "sector": "IT - Software",
+          "quantity": 49573.0,
+          "market_value_lakh": 3803.7363,
+          "pct_nav": 3.81
+        },
+        {
+          "isin": "INE274J01014",
+          "name": "Oil India Limited",
+          "sector": "Oil",
+          "quantity": 681905.0,
+          "market_value_lakh": 3726.9518,
+          "pct_nav": 3.73
+        },
+        {
+          "isin": "INE214T01019",
+          "name": "LTIMindtree Limited",
+          "sector": "IT - Software",
+          "quantity": 66590.0,
+          "market_value_lakh": 3529.836,
+          "pct_nav": 3.53
+        },
+        {
+          "isin": "INE154A01025",
+          "name": "ITC Limited",
+          "sector": "Diversified FMCG",
+          "quantity": 780653.0,
+          "market_value_lakh": 3171.7931,
+          "pct_nav": 3.17
+        },
+        {
+          "isin": "INE020B01018",
+          "name": "REC Limited",
+          "sector": "Finance",
+          "quantity": 708910.0,
+          "market_value_lakh": 3133.7367,
+          "pct_nav": 3.14
+        },
+        {
+          "isin": "INE262H01013",
+          "name": "Persistent Systems Limited",
+          "sector": "IT - Software",
+          "quantity": 35162.0,
+          "market_value_lakh": 3034.6037,
+          "pct_nav": 3.04
+        },
+        {
+          "isin": "INE522F01014",
+          "name": "Coal India Limited",
+          "sector": "Consumable Fuels",
+          "quantity": 690655.0,
+          "market_value_lakh": 3016.0904,
+          "pct_nav": 3.02
+        },
+        {
+          "isin": "INE494B01023",
+          "name": "TVS Motor Company Limited",
+          "sector": "Automobiles",
+          "quantity": 133912.0,
+          "market_value_lakh": 2864.6455,
+          "pct_nav": 2.87
+        },
+        {
+          "isin": "INE763G01038",
+          "name": "ICICI Securities Limited",
+          "sector": "Capital Markets",
+          "quantity": 327949.0,
+          "market_value_lakh": 2679.0154,
+          "pct_nav": 2.68
+        },
+        {
+          "isin": "INE591G01017",
+          "name": "Coforge Limited",
+          "sector": "IT - Software",
+          "quantity": 39924.0,
+          "market_value_lakh": 2616.6389,
+          "pct_nav": 2.62
+        },
+        {
+          "isin": "INE239A01024",
+          "name": "Nestle India Limited",
+          "sector": "Food Products",
+          "quantity": 90545.0,
+          "market_value_lakh": 2350.7293,
+          "pct_nav": 2.35
+        },
+        {
+          "isin": "INE572A01036",
+          "name": "JB Chemicals & Pharmaceuticals Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "quantity": 137499.0,
+          "market_value_lakh": 2147.5281,
+          "pct_nav": 2.15
+        },
+        {
+          "isin": "INE669C01036",
+          "name": "Tech Mahindra Limited",
+          "sector": "IT - Software",
+          "quantity": 166657.0,
+          "market_value_lakh": 2122.9602,
+          "pct_nav": 2.12
+        },
+        {
+          "isin": "INE195A01028",
+          "name": "Supreme Industries Limited",
+          "sector": "Industrial Products",
+          "quantity": 49445.0,
+          "market_value_lakh": 2052.2642,
+          "pct_nav": 2.05
+        },
+        {
+          "isin": "INE421D01022",
+          "name": "CCL Products (India) Limited",
+          "sector": "Agricultural Food & other Products",
+          "quantity": 315607.0,
+          "market_value_lakh": 1987.5351,
+          "pct_nav": 1.99
+        },
+        {
+          "isin": "INE298J01013",
+          "name": "Nippon Life India Asset Management Limited",
+          "sector": "Capital Markets",
+          "quantity": 92323.0,
+          "market_value_lakh": 476.0635,
+          "pct_nav": 0.48
+        },
+        {
+          "isin": "INE172A01027",
+          "name": "Castrol India Limited",
+          "sector": "Petroleum Products",
+          "quantity": 218528.0,
+          "market_value_lakh": 455.4124,
+          "pct_nav": 0.46
+        },
+        {
+          "isin": "INE002S01010",
+          "name": "Mahanagar Gas Limited",
+          "sector": "Gas",
+          "quantity": 29428.0,
+          "market_value_lakh": 436.8145,
+          "pct_nav": 0.44
+        },
+        {
+          "isin": "INE127D01025",
+          "name": "HDFC Asset Management Company Limited",
+          "sector": "Capital Markets",
+          "quantity": 11436.0,
+          "market_value_lakh": 429.1931,
+          "pct_nav": 0.43
+        },
+        {
+          "isin": "INE736A01011",
+          "name": "Central Depository Services (India) Limited",
+          "sector": "Capital Markets",
+          "quantity": 22267.0,
+          "market_value_lakh": 426.8918,
+          "pct_nav": 0.43
+        },
+        {
+          "isin": "INE685A01028",
+          "name": "Torrent Pharmaceuticals Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "quantity": 15695.0,
+          "market_value_lakh": 418.4444,
+          "pct_nav": 0.42
+        },
+        {
+          "isin": "INE335Y01020",
+          "name": "Indian Railway Catering And Tourism Corporation Limited",
+          "sector": "Leisure Services",
+          "quantity": 44458.0,
+          "market_value_lakh": 412.3035,
+          "pct_nav": 0.41
+        },
+        {
+          "isin": "INE885A01032",
+          "name": "Amara Raja Energy & Mobility Ltd",
+          "sector": "Auto Components",
+          "quantity": 47501.0,
+          "market_value_lakh": 398.5096,
+          "pct_nav": 0.4
+        },
+        {
+          "isin": "INE358A01014",
+          "name": "Abbott India Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "quantity": 1306.0,
+          "market_value_lakh": 371.3507,
+          "pct_nav": 0.37
+        },
+        {
+          "isin": "INE182A01018",
+          "name": "Pfizer Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "quantity": 7844.0,
+          "market_value_lakh": 361.2084,
+          "pct_nav": 0.36
+        },
+        {
+          "isin": "INE009A01021",
+          "name": "Infosys Limited",
+          "sector": "IT - Software",
+          "quantity": 21090.0,
+          "market_value_lakh": 353.0255,
+          "pct_nav": 0.35
+        },
+        {
+          "isin": "INE467B01029",
+          "name": "Tata Consultancy Services Limited",
+          "sector": "IT - Software",
+          "quantity": 8580.0,
+          "market_value_lakh": 351.3596,
+          "pct_nav": 0.35
+        },
+        {
+          "isin": "INE010V01017",
+          "name": "L&T Technology Services Limited",
+          "sector": "IT - Services",
+          "quantity": 6616.0,
+          "market_value_lakh": 350.8167,
+          "pct_nav": 0.35
+        },
+        {
+          "isin": "INE216A01030",
+          "name": "Britannia Industries Limited",
+          "sector": "Food Products",
+          "quantity": 6671.0,
+          "market_value_lakh": 331.2285,
+          "pct_nav": 0.33
+        },
+        {
+          "isin": "INE670A01012",
+          "name": "Tata Elxsi Limited",
+          "sector": "IT - Software",
+          "quantity": 4189.0,
+          "market_value_lakh": 327.2049,
+          "pct_nav": 0.33
+        },
+        {
+          "isin": "INE022Q01020",
+          "name": "Indian Energy Exchange Limited",
+          "sector": "Capital Markets",
+          "quantity": 229025.0,
+          "market_value_lakh": 325.559,
+          "pct_nav": 0.33
+        },
+        {
+          "isin": "INE462A01022",
+          "name": "Bayer Cropscience Limited",
+          "sector": "Fertilizers & Agrochemicals",
+          "quantity": 5669.0,
+          "market_value_lakh": 321.3955,
+          "pct_nav": 0.32
+        },
+        {
+          "isin": "INE536A01023",
+          "name": "Grindwell Norton Limited",
+          "sector": "Industrial Products",
+          "quantity": 14565.0,
+          "market_value_lakh": 304.2046,
+          "pct_nav": 0.3
+        },
+        {
+          "isin": "INE169A01031",
+          "name": "Coromandel International Limited",
+          "sector": "Fertilizers & Agrochemicals",
+          "quantity": 26446.0,
+          "market_value_lakh": 284.6251,
+          "pct_nav": 0.28
+        },
+        {
+          "isin": "INE203G01027",
+          "name": "Indraprastha Gas Limited",
+          "sector": "Gas",
+          "quantity": 66565.0,
+          "market_value_lakh": 283.5669,
+          "pct_nav": 0.28
+        },
+        {
+          "isin": "INE196A01026",
+          "name": "Marico Limited",
+          "sector": "Agricultural Food & other Products",
+          "quantity": 53908.0,
+          "market_value_lakh": 281.7232,
+          "pct_nav": 0.28
+        },
+        {
+          "isin": "INE361B01024",
+          "name": "Divi's Laboratories Limited",
+          "sector": "Pharmaceuticals & Biotechnology",
+          "quantity": 8041.0,
+          "market_value_lakh": 280.5344,
+          "pct_nav": 0.28
+        },
+        {
+          "isin": "INE640A01023",
+          "name": "SKF India Limited",
+          "sector": "Industrial Products",
+          "quantity": 5923.0,
+          "market_value_lakh": 279.7403,
+          "pct_nav": 0.28
+        },
+        {
+          "isin": "INE021A01026",
+          "name": "Asian Paints Limited",
+          "sector": "Consumer Durables",
+          "quantity": 9578.0,
+          "market_value_lakh": 270.2816,
+          "pct_nav": 0.27
+        },
+        {
+          "isin": "INE761H01022",
+          "name": "Page Industries Limited",
+          "sector": "Textiles & Apparels",
+          "quantity": 776.0,
+          "market_value_lakh": 266.2421,
+          "pct_nav": 0.27
+        },
+        {
+          "isin": "NIL",
+          "name": "1. Security in default beyond its maturiy date",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "12.64",
+          "name": "NJ Flexi Cap Fund - Direct IDCW",
+          "sector": "13.15",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "12.64",
+          "name": "NJ Flexi Cap Fund - Direct Growth",
+          "sector": "13.15",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "12.54",
+          "name": "NJ Flexi Cap Fund - Regular IDCW",
+          "sector": "13.02",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "12.54",
+          "name": "NJ Flexi Cap Fund - Regular Growth",
+          "sector": "13.02",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "3. Total Dividend (Net) declared during the month",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "4. Bonus was declared during the month",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "5. Investment in Repo of Corporate Debt Securities during the month",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "6. Investment in foreign securities/ADRs/GDRs at the end of the month",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "7. Portfolio Turnover Ratio",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "8. Margin Deposits includes Margin money placed on derivatives other than margin money placed with bank",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "9. Total value and percentage of Illiquid Equity shares",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "01 Day",
+          "name": "10. Average Maturity for the debt securities held (as on February 29, 2024)",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "NIL",
+          "name": "11. Instances of fair valuation of Securities or Deviation in valuation from what is provided by valuation agencies",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        },
+        {
+          "isin": "Nil",
+          "name": "12. Deviation in the mandated asset allocation pursuant to SEBI Master Circular \n SEBI/HO/IMD/IMD-PoD-1/P/CIR/2023/74 dated May 19, 2023",
+          "sector": "",
+          "quantity": null,
+          "market_value_lakh": null,
+          "pct_nav": null
+        }
+      ]
+    }
+  ]
+}

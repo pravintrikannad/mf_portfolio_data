@@ -10,7 +10,7 @@ def parse_date_from_text(text: str) -> Optional[str]:
     m = re.search(r'as on\s+(\w+ \d{1,2},?\s*\d{4})', text, re.IGNORECASE)
     if m:
         raw = m.group(1).strip()
-        for fmt in ("%B %d, %Y", "%B %d,%Y", "%B %d %Y"):
+        for fmt in ("%B %d, %Y", "%B %d,%Y", "%B %d %Y", "%b %d, %Y", "%b %d,%Y", "%b %d %Y"):
             try:
                 dt = datetime.datetime.strptime(raw, fmt)
                 return dt.strftime("%Y-%m-%d")

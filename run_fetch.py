@@ -1,6 +1,10 @@
 """
 Orchestrator for AMC holdings fetchers.
 Run by GitHub Actions; outputs JSON files to data/<amc>.json.
+
+Two types of fetchers:
+  1. Direct scrapers (ppfas, kotak, hdfc, etc.) — module/fetch_fn style
+  2. Advisorkhoj-based (absl, sbi, nippon, etc.) — use advisorkhoj.fetch_amc
 """
 import json
 import sys
@@ -10,8 +14,9 @@ from pathlib import Path
 DATA_DIR = Path(__file__).parent / "data"
 DATA_DIR.mkdir(exist_ok=True)
 
-# AMC registry — add entries here for Phase 2
+# AMC registry
 AMC_REGISTRY = {
+    # ── Direct scrapers ─────────────────────────────────────────────
     "ppfas": {
         "module": "scrapers.ppfas",
         "fetch_fn": "fetch",
@@ -37,28 +42,38 @@ AMC_REGISTRY = {
         "fetch_fn": "fetch",
         "description": "HDFC AMC",
     },
-    # Phase 2 additions (uncomment + implement scraper):
-    # "hdfc":    {"module": "scrapers.hdfc",    "fetch_fn": "fetch", "description": "HDFC AMC"},
-    # "axis":    {"module": "scrapers.axis",    "fetch_fn": "fetch", "description": "Axis AMC"},
-    # "nippon":  {"module": "scrapers.nippon",  "fetch_fn": "fetch", "description": "Nippon AMC"},
-    # "uti":     {"module": "scrapers.uti",     "fetch_fn": "fetch", "description": "UTI AMC"},
+    # ── Advisorkhoj-based scrapers ──────────────────────────────────
+    "absl":      {"advisorkhoj": True, "description": "Aditya Birla Sun Life AMC"},
+    "sbi":       {"advisorkhoj": True, "description": "SBI Mutual Fund"},
+    "nippon":    {"advisorkhoj": True, "description": "Nippon India AMC"},
+    "icici_pru": {"advisorkhoj": True, "description": "ICICI Prudential AMC"},
+    "uti":       {"advisorkhoj": True, "description": "UTI AMC"},
+    "dsp":       {"advisorkhoj": True, "description": "DSP AMC"},
+    "franklin":  {"advisorkhoj": True, "description": "Franklin Templeton AMC"},
+    "tata":      {"advisorkhoj": True, "description": "Tata AMC"},
+    "motilal":   {"advisorkhoj": True, "description": "Motilal Oswal AMC"},
+    "quant":     {"advisorkhoj": True, "description": "Quant AMC"},
+    "bajaj":     {"advisorkhoj": True, "description": "Bajaj Finserv AMC"},
+    "nj":        {"advisorkhoj": True, "description": "NJ AMC"},
 }
 
 
 def run_amc(amc_key: str, config: dict) -> bool:
-    mod_name  = config["module"]
-    fn_name   = config["fetch_fn"]
-    desc      = config["description"]
+    desc = config["description"]
 
     print(f"\n{'='*50}")
     print(f"Fetching: {desc} ({amc_key})")
     print(f"{'='*50}")
 
     try:
-        import importlib
-        mod = importlib.import_module(mod_name)
-        fn  = getattr(mod, fn_name)
-        data = fn()
+        if config.get("advisorkhoj"):
+            from scrapers.advisorkhoj import fetch_amc
+            data = fetch_amc(amc_key)
+        else:
+            import importlib
+            mod = importlib.import_module(config["module"])
+            fn  = getattr(mod, config["fetch_fn"])
+            data = fn()
 
         if not data or not data.get("schemes"):
             print(f"  WARNING: No schemes returned for {amc_key}")
