@@ -47,6 +47,7 @@ AMC_PATTERNS = [
     (r"dsp",                  "dsp"),
     (r"franklin",             "franklin"),
     (r"edel",                 "edelweiss"),
+    (r"bandhan",              "bandhan"),
 ]
 
 
@@ -73,14 +74,30 @@ def parse_and_commit(filepath: Path, amc_key: str):
         log.error(f"Parse error: {e}")
         return
 
-    # Drop schemes with no scheme_code (fund not in our universe)
-    result["schemes"] = [s for s in result.get("schemes", []) if s.get("scheme_code")]
+    # Drop schemes with no scheme_code AND no scheme_name (truly unmapped)
+    result["schemes"] = [s for s in result.get("schemes", []) if s.get("scheme_code") or s.get("scheme_name")]
     if not result["schemes"]:
         log.info(f"Skipped {filepath.name} — no schemes in universe (scheme_code not mapped).")
         return
 
     import json
     out_path = REPO_DIR / "data" / f"{amc_key}.json"
+
+    # For AMCs delivered one-fund-per-file (Bandhan), merge into existing JSON
+    if amc_key == "bandhan" and out_path.exists():
+        try:
+            existing = json.loads(out_path.read_text())
+            existing_codes = {s["sheet_code"] for s in existing.get("schemes", [])}
+            for s in result["schemes"]:
+                if s["sheet_code"] not in existing_codes:
+                    existing["schemes"].append(s)
+                    log.info(f"  Merged {s['scheme_name']} into {out_path.name}")
+                else:
+                    log.info(f"  {s['scheme_name']} already in {out_path.name}, skipping")
+            result = existing
+        except Exception as e:
+            log.warning(f"Could not merge into existing {out_path.name}: {e}")
+
     out_path.write_text(json.dumps(result, indent=2, ensure_ascii=False))
     log.info(f"Saved {out_path.name}: {len(result.get('schemes', []))} schemes")
 

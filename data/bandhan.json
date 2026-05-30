@@ -1,0 +1,718 @@
+{
+  "amc": "bandhan",
+  "date": "2026-04-30",
+  "source": "6951e40f-bandhan-banking-and-psu-fund_d66216b3-b2f4-4d4e-adee-17bf230cef53_30-april-2026.xlsx",
+  "schemes": [
+    {
+      "sheet_code": "IDF138",
+      "scheme_code": null,
+      "scheme_name": "Bandhan Banking and PSU Fund",
+      "holdings": [
+        {
+          "isin": "IN0020250042",
+          "name": "6.68% GOI (MD 07/07/2040)",
+          "sector": "SOVEREIGN",
+          "quantity": 125900000.0,
+          "market_value_lakh": 118708.84,
+          "pct_nav": 9.8
+        },
+        {
+          "isin": "IN1920160117",
+          "name": "7.86% Karnataka SDL (MD 15/03/2027)",
+          "sector": "SOVEREIGN",
+          "quantity": 18500000.0,
+          "market_value_lakh": 18788.49,
+          "pct_nav": 1.55
+        },
+        {
+          "isin": "IN0020210244",
+          "name": "6.54% GOI (MD 17/01/2032)",
+          "sector": "SOVEREIGN",
+          "quantity": 12300000.0,
+          "market_value_lakh": 12075.59,
+          "pct_nav": 1.0
+        },
+        {
+          "isin": "IN0020240076",
+          "name": "7.02% GOI (MD 18/06/2031)",
+          "sector": "SOVEREIGN",
+          "quantity": 11500000.0,
+          "market_value_lakh": 11587.33,
+          "pct_nav": 0.96
+        },
+        {
+          "isin": "IN0020250067",
+          "name": "6.01% GOI (MD 21/07/2030)",
+          "sector": "SOVEREIGN",
+          "quantity": 2200000.0,
+          "market_value_lakh": 2153.21,
+          "pct_nav": 0.18
+        },
+        {
+          "isin": "IN2720240158",
+          "name": "7.17% Odisha SDL (MD 12/09/2030)",
+          "sector": "SOVEREIGN",
+          "quantity": 1000000.0,
+          "market_value_lakh": 994.85,
+          "pct_nav": 0.08
+        },
+        {
+          "isin": "IN0020160118",
+          "name": "6.79% GOI (MD 26/12/2029)",
+          "sector": "SOVEREIGN",
+          "quantity": 495300.0,
+          "market_value_lakh": 499.27,
+          "pct_nav": 0.04
+        },
+        {
+          "isin": "IN3120170078",
+          "name": "7.18% Tamilnadu SDL (MD 26/07/2027)",
+          "sector": "SOVEREIGN",
+          "quantity": 120000.0,
+          "market_value_lakh": 121.0,
+          "pct_nav": 0.01
+        },
+        {
+          "isin": "INE053F08411",
+          "name": "7.37% Indian Railway Finance Corporation Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 53000000.0,
+          "market_value_lakh": 52780.58,
+          "pct_nav": 4.36
+        },
+        {
+          "isin": "INE040A08955",
+          "name": "7.7% HDFC Bank Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 49500000.0,
+          "market_value_lakh": 49492.18,
+          "pct_nav": 4.09
+        },
+        {
+          "isin": "INE206D08501",
+          "name": "7.7% Nuclear Power Corporation Of India Limited **",
+          "sector": "ICRA AAA",
+          "quantity": 41000000.0,
+          "market_value_lakh": 41184.38,
+          "pct_nav": 3.4
+        },
+        {
+          "isin": "INE261F08EM1",
+          "name": "7.53% National Bank For Agriculture and Rural Development",
+          "sector": "ICRA AAA",
+          "quantity": 35000000.0,
+          "market_value_lakh": 34961.26,
+          "pct_nav": 2.89
+        },
+        {
+          "isin": "INE261F08EO7",
+          "name": "7.48% National Bank For Agriculture and Rural Development",
+          "sector": "CRISIL AAA",
+          "quantity": 29000000.0,
+          "market_value_lakh": 28861.53,
+          "pct_nav": 2.38
+        },
+        {
+          "isin": "INE040A08724",
+          "name": "8.55% HDFC Bank Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 28000000.0,
+          "market_value_lakh": 28523.35,
+          "pct_nav": 2.36
+        },
+        {
+          "isin": "INE040A08AB1",
+          "name": "9% HDFC Bank Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 26000000.0,
+          "market_value_lakh": 26700.08,
+          "pct_nav": 2.21
+        },
+        {
+          "isin": "INE094A08168",
+          "name": "7.22% Hindustan Petroleum Corporation Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 25000000.0,
+          "market_value_lakh": 24873.33,
+          "pct_nav": 2.05
+        },
+        {
+          "isin": "INE242A08551",
+          "name": "7.36% Indian Oil Corporation Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 24838000.0,
+          "market_value_lakh": 24803.13,
+          "pct_nav": 2.05
+        },
+        {
+          "isin": "INE556F08KS8",
+          "name": "7.34% Small Industries Dev Bank of India **",
+          "sector": "CRISIL AAA",
+          "quantity": 22500000.0,
+          "market_value_lakh": 22311.29,
+          "pct_nav": 1.84
+        },
+        {
+          "isin": "INE733E07KL3",
+          "name": "7.32% NTPC Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 21000000.0,
+          "market_value_lakh": 20955.94,
+          "pct_nav": 1.73
+        },
+        {
+          "isin": "INE040A08401",
+          "name": "6.44% HDFC Bank Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 18500000.0,
+          "market_value_lakh": 17967.03,
+          "pct_nav": 1.48
+        },
+        {
+          "isin": "INE028A08281",
+          "name": "7.39% Bank of Baroda **",
+          "sector": "ICRA AAA",
+          "quantity": 17500000.0,
+          "market_value_lakh": 17348.42,
+          "pct_nav": 1.43
+        },
+        {
+          "isin": "INE261F08EP4",
+          "name": "6.66% National Bank For Agriculture and Rural Development **",
+          "sector": "ICRA AAA",
+          "quantity": 17500000.0,
+          "market_value_lakh": 17104.06,
+          "pct_nav": 1.41
+        },
+        {
+          "isin": "INE090A08UF5",
+          "name": "6.67% ICICI Bank Limited **",
+          "sector": "ICRA AAA",
+          "quantity": 17500000.0,
+          "market_value_lakh": 17073.44,
+          "pct_nav": 1.41
+        },
+        {
+          "isin": "INE261F08EA6",
+          "name": "7.5% National Bank For Agriculture and Rural Development **",
+          "sector": "CRISIL AAA",
+          "quantity": 16500000.0,
+          "market_value_lakh": 16512.36,
+          "pct_nav": 1.36
+        },
+        {
+          "isin": "INE752E08551",
+          "name": "8.24% Power Grid Corporation of India Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 15500000.0,
+          "market_value_lakh": 15852.97,
+          "pct_nav": 1.31
+        },
+        {
+          "isin": "INE134E08KV1",
+          "name": "7.75% Power Finance Corporation Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 14500000.0,
+          "market_value_lakh": 14550.4,
+          "pct_nav": 1.2
+        },
+        {
+          "isin": "INE053F08528",
+          "name": "6.58% Indian Railway Finance Corporation Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 15000000.0,
+          "market_value_lakh": 14516.27,
+          "pct_nav": 1.2
+        },
+        {
+          "isin": "INE020B08EW9",
+          "name": "7.71% REC Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 13500000.0,
+          "market_value_lakh": 13532.49,
+          "pct_nav": 1.12
+        },
+        {
+          "isin": "INE261F08EH1",
+          "name": "7.62% National Bank For Agriculture and Rural Development **",
+          "sector": "CRISIL AAA",
+          "quantity": 12500000.0,
+          "market_value_lakh": 12469.38,
+          "pct_nav": 1.03
+        },
+        {
+          "isin": "INE020B08FD6",
+          "name": "7.58% REC Limited **",
+          "sector": "ICRA AAA",
+          "quantity": 12500000.0,
+          "market_value_lakh": 12467.46,
+          "pct_nav": 1.03
+        },
+        {
+          "isin": "INE134E08NO0",
+          "name": "7.44% Power Finance Corporation Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 12500000.0,
+          "market_value_lakh": 12420.16,
+          "pct_nav": 1.03
+        },
+        {
+          "isin": "INE556F08KW0",
+          "name": "7.42% Small Industries Dev Bank of India **",
+          "sector": "CRISIL AAA",
+          "quantity": 12500000.0,
+          "market_value_lakh": 12416.25,
+          "pct_nav": 1.03
+        },
+        {
+          "isin": "INE261F08ES8",
+          "name": "7.01% National Bank For Agriculture and Rural Development",
+          "sector": "CRISIL AAA",
+          "quantity": 12500000.0,
+          "market_value_lakh": 12281.39,
+          "pct_nav": 1.01
+        },
+        {
+          "isin": "INE090A08UE8",
+          "name": "6.45% ICICI Bank Limited **",
+          "sector": "ICRA AAA",
+          "quantity": 12500000.0,
+          "market_value_lakh": 12227.85,
+          "pct_nav": 1.01
+        },
+        {
+          "isin": "INE020B08FY2",
+          "name": "6.7% REC Limited **",
+          "sector": "ICRA AAA",
+          "quantity": 12500000.0,
+          "market_value_lakh": 12117.79,
+          "pct_nav": 1.0
+        },
+        {
+          "isin": "INE134E08NU7",
+          "name": "6.59% Power Finance Corporation Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 12500000.0,
+          "market_value_lakh": 12015.13,
+          "pct_nav": 0.99
+        },
+        {
+          "isin": "INE040A08AC9",
+          "name": "8.05% HDFC Bank Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 10000000.0,
+          "market_value_lakh": 10067.55,
+          "pct_nav": 0.83
+        },
+        {
+          "isin": "INE906B07HG7",
+          "name": "7.49% National Highways Authority Of India **",
+          "sector": "CRISIL AAA",
+          "quantity": 10000000.0,
+          "market_value_lakh": 10008.9,
+          "pct_nav": 0.83
+        },
+        {
+          "isin": "INE134E08NP7",
+          "name": "7.45% Power Finance Corporation Limited",
+          "sector": "CRISIL AAA",
+          "quantity": 10000000.0,
+          "market_value_lakh": 9981.55,
+          "pct_nav": 0.82
+        },
+        {
+          "isin": "INE261F08EK5",
+          "name": "7.44% National Bank For Agriculture and Rural Development",
+          "sector": "CRISIL AAA",
+          "quantity": 10000000.0,
+          "market_value_lakh": 9981.24,
+          "pct_nav": 0.82
+        },
+        {
+          "isin": "INE053F08387",
+          "name": "7.46% Indian Railway Finance Corporation Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 10000000.0,
+          "market_value_lakh": 9979.13,
+          "pct_nav": 0.82
+        },
+        {
+          "isin": "INE053F08494",
+          "name": "6.78% Indian Railway Finance Corporation Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 10000000.0,
+          "market_value_lakh": 9748.81,
+          "pct_nav": 0.81
+        },
+        {
+          "isin": "INE134E08NR3",
+          "name": "6.64% Power Finance Corporation Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 10000000.0,
+          "market_value_lakh": 9647.7,
+          "pct_nav": 0.8
+        },
+        {
+          "isin": "INE090A08TY8",
+          "name": "7.47% ICICI Bank Limited **",
+          "sector": "ICRA AAA",
+          "quantity": 7500000.0,
+          "market_value_lakh": 7501.84,
+          "pct_nav": 0.62
+        },
+        {
+          "isin": "INE053F07BW9",
+          "name": "7.5% Indian Railway Finance Corporation Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 7500000.0,
+          "market_value_lakh": 7496.52,
+          "pct_nav": 0.62
+        },
+        {
+          "isin": "INE134E08MX3",
+          "name": "7.6% Power Finance Corporation Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 7500000.0,
+          "market_value_lakh": 7490.21,
+          "pct_nav": 0.62
+        },
+        {
+          "isin": "INE556F08KT6",
+          "name": "7.44% Small Industries Dev Bank of India **",
+          "sector": "CRISIL AAA",
+          "quantity": 7500000.0,
+          "market_value_lakh": 7473.77,
+          "pct_nav": 0.62
+        },
+        {
+          "isin": "INE020B08FL9",
+          "name": "7.34% REC Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 7500000.0,
+          "market_value_lakh": 7417.41,
+          "pct_nav": 0.61
+        },
+        {
+          "isin": "INE020B08FU0",
+          "name": "6.87% REC Limited **",
+          "sector": "ICRA AAA",
+          "quantity": 7500000.0,
+          "market_value_lakh": 7294.57,
+          "pct_nav": 0.6
+        },
+        {
+          "isin": "INE752E07LC0",
+          "name": "8.7% Power Grid Corporation of India Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 5650000.0,
+          "market_value_lakh": 5786.17,
+          "pct_nav": 0.48
+        },
+        {
+          "isin": "INE040A08872",
+          "name": "9% HDFC Bank Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 5000000.0,
+          "market_value_lakh": 5130.76,
+          "pct_nav": 0.42
+        },
+        {
+          "isin": "INE848E08136",
+          "name": "8.12% NHPC Limited **",
+          "sector": "CARE AAA",
+          "quantity": 5000000.0,
+          "market_value_lakh": 5093.64,
+          "pct_nav": 0.42
+        },
+        {
+          "isin": "INE238A08450",
+          "name": "8.6% Axis Bank Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 5000000.0,
+          "market_value_lakh": 5085.88,
+          "pct_nav": 0.42
+        },
+        {
+          "isin": "INE906B07HF9",
+          "name": "7.8% National Highways Authority Of India **",
+          "sector": "CRISIL AAA",
+          "quantity": 5000000.0,
+          "market_value_lakh": 5047.17,
+          "pct_nav": 0.42
+        },
+        {
+          "isin": "INE020B08EK4",
+          "name": "7.46% REC Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 5000000.0,
+          "market_value_lakh": 4995.12,
+          "pct_nav": 0.41
+        },
+        {
+          "isin": "INE261F08EU4",
+          "name": "7.44% National Bank For Agriculture and Rural Development",
+          "sector": "CRISIL AAA",
+          "quantity": 5000000.0,
+          "market_value_lakh": 4965.18,
+          "pct_nav": 0.41
+        },
+        {
+          "isin": "INE556F08LA4",
+          "name": "6.74% Small Industries Dev Bank of India **",
+          "sector": "CRISIL AAA",
+          "quantity": 5000000.0,
+          "market_value_lakh": 4887.1,
+          "pct_nav": 0.4
+        },
+        {
+          "isin": "INE906B07GO3",
+          "name": "8.49% National Highways Authority Of India **",
+          "sector": "CRISIL AAA",
+          "quantity": 3000000.0,
+          "market_value_lakh": 3074.63,
+          "pct_nav": 0.25
+        },
+        {
+          "isin": "INE261F08DV4",
+          "name": "7.62% National Bank For Agriculture and Rural Development **",
+          "sector": "CRISIL AAA",
+          "quantity": 3000000.0,
+          "market_value_lakh": 3001.16,
+          "pct_nav": 0.25
+        },
+        {
+          "isin": "INE752E08601",
+          "name": "7.49% Power Grid Corporation of India Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 3000000.0,
+          "market_value_lakh": 2995.97,
+          "pct_nav": 0.25
+        },
+        {
+          "isin": "INE514E08ED5",
+          "name": "8.87% Export Import Bank of India **",
+          "sector": "CRISIL AAA",
+          "quantity": 2500000.0,
+          "market_value_lakh": 2599.7,
+          "pct_nav": 0.21
+        },
+        {
+          "isin": "INE020B08CI2",
+          "name": "7.89% REC Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 2500000.0,
+          "market_value_lakh": 2517.46,
+          "pct_nav": 0.21
+        },
+        {
+          "isin": "INE514E08GB4",
+          "name": "7.45% Export Import Bank of India **",
+          "sector": "CRISIL AAA",
+          "quantity": 2500000.0,
+          "market_value_lakh": 2505.62,
+          "pct_nav": 0.21
+        },
+        {
+          "isin": "INE053F08312",
+          "name": "7.41% Indian Railway Finance Corporation Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 2500000.0,
+          "market_value_lakh": 2503.79,
+          "pct_nav": 0.21
+        },
+        {
+          "isin": "INE242A08437",
+          "name": "7.41% Indian Oil Corporation Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 2500000.0,
+          "market_value_lakh": 2499.47,
+          "pct_nav": 0.21
+        },
+        {
+          "isin": "INE053F08320",
+          "name": "7.45% Indian Railway Finance Corporation Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 2500000.0,
+          "market_value_lakh": 2497.88,
+          "pct_nav": 0.21
+        },
+        {
+          "isin": "INE514E08GE8",
+          "name": "7.35% Export Import Bank of India **",
+          "sector": "CRISIL AAA",
+          "quantity": 2500000.0,
+          "market_value_lakh": 2496.66,
+          "pct_nav": 0.21
+        },
+        {
+          "isin": "INE020B08DT7",
+          "name": "6.23% REC Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 2500000.0,
+          "market_value_lakh": 2486.87,
+          "pct_nav": 0.21
+        },
+        {
+          "isin": "INE094A08069",
+          "name": "7.03% Hindustan Petroleum Corporation Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 2500000.0,
+          "market_value_lakh": 2461.52,
+          "pct_nav": 0.2
+        },
+        {
+          "isin": "INE556F08KN9",
+          "name": "7.75% Small Industries Dev Bank of India **",
+          "sector": "CRISIL AAA",
+          "quantity": 2000000.0,
+          "market_value_lakh": 2003.39,
+          "pct_nav": 0.17
+        },
+        {
+          "isin": "INE556F08KJ7",
+          "name": "7.55% Small Industries Dev Bank of India **",
+          "sector": "CRISIL AAA",
+          "quantity": 1500000.0,
+          "market_value_lakh": 1501.14,
+          "pct_nav": 0.12
+        },
+        {
+          "isin": "INE053F07BU3",
+          "name": "7.48% Indian Railway Finance Corporation Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 1500000.0,
+          "market_value_lakh": 1498.42,
+          "pct_nav": 0.12
+        },
+        {
+          "isin": "INE206D08360",
+          "name": "8.13% Nuclear Power Corporation Of India Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 1000000.0,
+          "market_value_lakh": 1008.97,
+          "pct_nav": 0.08
+        },
+        {
+          "isin": "INE557F08FZ1",
+          "name": "7.59% National Housing Bank **",
+          "sector": "CRISIL AAA",
+          "quantity": 1000000.0,
+          "market_value_lakh": 1003.3,
+          "pct_nav": 0.08
+        },
+        {
+          "isin": "INE848E07AB1",
+          "name": "7.52% NHPC Limited **",
+          "sector": "CARE AAA",
+          "quantity": 1000000.0,
+          "market_value_lakh": 1000.94,
+          "pct_nav": 0.08
+        },
+        {
+          "isin": "INE020B08EH0",
+          "name": "7.77% REC Limited **",
+          "sector": "CRISIL AAA",
+          "quantity": 500000.0,
+          "market_value_lakh": 502.68,
+          "pct_nav": 0.04
+        },
+        {
+          "isin": "INE557F08FR8",
+          "name": "7.22% National Housing Bank **",
+          "sector": "CRISIL AAA",
+          "quantity": 500000.0,
+          "market_value_lakh": 500.62,
+          "pct_nav": 0.04
+        },
+        {
+          "isin": "INE476A16I18",
+          "name": "Canara Bank **",
+          "sector": "ICRA A1+",
+          "quantity": 35000000.0,
+          "market_value_lakh": 34132.67,
+          "pct_nav": 2.82
+        },
+        {
+          "isin": "INE028A16KC6",
+          "name": "Bank of Baroda",
+          "sector": "FITCH A1+",
+          "quantity": 30000000.0,
+          "market_value_lakh": 29251.29,
+          "pct_nav": 2.42
+        },
+        {
+          "isin": "INE238AD6CA3",
+          "name": "Axis Bank Limited **",
+          "sector": "CRISIL A1+",
+          "quantity": 30000000.0,
+          "market_value_lakh": 28724.07,
+          "pct_nav": 2.37
+        },
+        {
+          "isin": "INE476A16G36",
+          "name": "Canara Bank",
+          "sector": "CRISIL A1+",
+          "quantity": 30000000.0,
+          "market_value_lakh": 28469.04,
+          "pct_nav": 2.35
+        },
+        {
+          "isin": "INE237AD6158",
+          "name": "Kotak Mahindra Bank Limited **",
+          "sector": "CRISIL A1+",
+          "quantity": 25000000.0,
+          "market_value_lakh": 23929.23,
+          "pct_nav": 1.98
+        },
+        {
+          "isin": "INE556F16BW2",
+          "name": "Small Industries Dev Bank of India **",
+          "sector": "CRISIL A1+",
+          "quantity": 25000000.0,
+          "market_value_lakh": 23710.18,
+          "pct_nav": 1.96
+        },
+        {
+          "isin": "INE238AD6BC1",
+          "name": "Axis Bank Limited **",
+          "sector": "CRISIL A1+",
+          "quantity": 10000000.0,
+          "market_value_lakh": 9816.11,
+          "pct_nav": 0.81
+        },
+        {
+          "isin": "INE238AD6BD9",
+          "name": "Axis Bank Limited **",
+          "sector": "CRISIL A1+",
+          "quantity": 10000000.0,
+          "market_value_lakh": 9814.33,
+          "pct_nav": 0.81
+        },
+        {
+          "isin": "INE237AD6042",
+          "name": "Kotak Mahindra Bank Limited **",
+          "sector": "CRISIL A1+",
+          "quantity": 5000000.0,
+          "market_value_lakh": 4868.17,
+          "pct_nav": 0.4
+        },
+        {
+          "isin": "INE514E14TC3",
+          "name": "Export Import Bank of India **",
+          "sector": "CRISIL A1+",
+          "quantity": 25000000.0,
+          "market_value_lakh": 23735.3,
+          "pct_nav": 1.96
+        },
+        {
+          "isin": "INF0RQ622028",
+          "name": "Corporate Debt Market Development Fund Class A2",
+          "sector": "",
+          "quantity": 36432.328,
+          "market_value_lakh": 4281.29,
+          "pct_nav": 0.35
+        }
+      ]
+    }
+  ]
+}
