@@ -397,6 +397,179 @@ def _read_edel_index(wb) -> dict[str, str]:
     return index
 
 
+def _parse_mirae_sheet(ws) -> tuple[str, str, str, list]:
+    """Mirae Asset layout: col1=name, col2=ISIN, col3=sector, col4=qty, col5=mktval, col6=pct (decimal).
+    Row 0 col1=scheme_name; date from datetime in row 4 or 'as on' text."""
+    date_str = None
+    scheme_name = ""
+    holdings = []
+    header_found = False
+
+    for i, row in enumerate(ws.iter_rows(values_only=True)):
+        cells = [clean_str(c) for c in row]
+
+        if i == 0:
+            scheme_name = cells[1] if len(cells) > 1 else ""
+            continue
+
+        # Date may be a datetime object in col4 of the meta row
+        if not date_str:
+            for c in row:
+                if isinstance(c, datetime.datetime):
+                    date_str = c.strftime("%Y-%m-%d")
+                    break
+            if not date_str:
+                text = " ".join(cells)
+                if "as on" in text.lower():
+                    date_str = parse_date_from_text(text)
+
+        if not header_found:
+            if len(cells) > 2 and cells[1] and "name of" in cells[1].lower() and "instrument" in cells[1].lower():
+                header_found = True
+            continue
+
+        if not any(cells):
+            continue
+
+        name   = cells[1] if len(cells) > 1 else ""
+        isin   = cells[2] if len(cells) > 2 else ""
+        sector = cells[3] if len(cells) > 3 else ""
+
+        if not name or not isin or not isin.startswith("IN"):
+            continue
+        if re.match(r"^(sub\s*total|total|grand\s*total|net receivable|margin|treps)", name.strip(), re.IGNORECASE):
+            continue
+        if re.match(r"^(\(a\)|\(b\)|\(c\)|listed|unlisted|equity|debt|others|money market|government)", name.strip(), re.IGNORECASE):
+            continue
+
+        pct_nav = safe_float(cells[6]) if len(cells) > 6 else None
+        holdings.append({
+            "isin": isin, "name": name, "sector": sector,
+            "quantity":          safe_float(cells[4]) if len(cells) > 4 else None,
+            "market_value_lakh": safe_float(cells[5]) if len(cells) > 5 else None,
+            "pct_nav": pct_nav, "_raw_pct": pct_nav,
+        })
+
+    raw_pcts = [h["_raw_pct"] for h in holdings if h["_raw_pct"] is not None]
+    if raw_pcts and all(p < 1.5 for p in raw_pcts):
+        for h in holdings:
+            if h["pct_nav"] is not None:
+                h["pct_nav"] = round(h["pct_nav"] * 100, 4)
+    for h in holdings:
+        h.pop("_raw_pct", None)
+
+    return ws.title, scheme_name, date_str, holdings
+
+
+def _parse_samco_sheet(ws) -> tuple[str, str, str, list]:
+    """Samco layout: col1=name, col2=ISIN, col3=sector, col4=qty, col5=mktval, col6=pct (decimal).
+    Row 2 col1 has 'STATEMENT OF <NAME> AS ON <DATE>'."""
+    date_str = None
+    scheme_name = ""
+    holdings = []
+    header_found = False
+
+    for i, row in enumerate(ws.iter_rows(values_only=True)):
+        cells = [clean_str(c) for c in row]
+        text  = " ".join(cells)
+
+        if i == 2:
+            # "MONTHLY PORTFOLIO STATEMENT OF SAMCO FLEXICAP FUND AS ON April 30, 2026"
+            m = re.search(r'statement of\s+(.+?)\s+as on', cells[1], re.IGNORECASE)
+            if m:
+                scheme_name = m.group(1).strip()
+            if "as on" in cells[1].lower():
+                date_str = parse_date_from_text(cells[1])
+            continue
+
+        if not header_found:
+            if len(cells) > 2 and cells[1] and "name of" in cells[1].lower() and "instrument" in cells[1].lower():
+                header_found = True
+            continue
+
+        if not any(cells):
+            continue
+
+        name   = cells[1] if len(cells) > 1 else ""
+        isin   = cells[2] if len(cells) > 2 else ""
+        sector = cells[3] if len(cells) > 3 else ""
+
+        if not name or not isin or not isin.startswith("IN"):
+            continue
+        if re.match(r"^(sub\s*total|total|grand\s*total|net receivable|margin|treps)", name.strip(), re.IGNORECASE):
+            continue
+        if re.match(r"^(\(a\)|\(b\)|\(c\)|listed|unlisted|equity|debt|others|money market|government)", name.strip(), re.IGNORECASE):
+            continue
+
+        pct_nav = safe_float(cells[6]) if len(cells) > 6 else None
+        holdings.append({
+            "isin": isin, "name": name, "sector": sector,
+            "quantity":          safe_float(cells[4]) if len(cells) > 4 else None,
+            "market_value_lakh": safe_float(cells[5]) if len(cells) > 5 else None,
+            "pct_nav": pct_nav, "_raw_pct": pct_nav,
+        })
+
+    raw_pcts = [h["_raw_pct"] for h in holdings if h["_raw_pct"] is not None]
+    if raw_pcts and all(p < 1.5 for p in raw_pcts):
+        for h in holdings:
+            if h["pct_nav"] is not None:
+                h["pct_nav"] = round(h["pct_nav"] * 100, 4)
+    for h in holdings:
+        h.pop("_raw_pct", None)
+
+    return ws.title, scheme_name, date_str, holdings
+
+
+def _parse_helios_sheet(ws) -> tuple[str, str, str, list]:
+    """Helios layout: col2=name, col3=ISIN, col4=sector, col5=qty, col6=mktval, col7=pct (plain %).
+    Row 2 col3=scheme_name; Row 3 col3=date datetime."""
+    date_str = None
+    scheme_name = ""
+    holdings = []
+    header_found = False
+
+    for i, row in enumerate(ws.iter_rows(values_only=True)):
+        cells = [clean_str(c) for c in row]
+
+        if i == 2:
+            scheme_name = cells[3].split("(")[0].strip() if len(cells) > 3 else ""
+            continue
+        if i == 3:
+            for c in row:
+                if isinstance(c, datetime.datetime):
+                    date_str = c.strftime("%Y-%m-%d")
+                    break
+            continue
+
+        if not header_found:
+            if len(cells) > 3 and cells[2] and "name of" in cells[2].lower() and "instrument" in cells[2].lower():
+                header_found = True
+            continue
+
+        if not any(cells):
+            continue
+
+        name   = cells[2] if len(cells) > 2 else ""
+        isin   = cells[3] if len(cells) > 3 else ""
+        sector = cells[4] if len(cells) > 4 else ""
+
+        if not name or not isin or not isin.startswith("IN"):
+            continue
+        if re.match(r"^(sub\s*total|total|grand\s*total|net receivable|margin|treps)", name.strip(), re.IGNORECASE):
+            continue
+        if re.match(r"^(\(a\)|\(b\)|\(c\)|listed|unlisted|equity|debt|others|money market|government)", name.strip(), re.IGNORECASE):
+            continue
+
+        holdings.append({
+            "isin": isin, "name": name, "sector": sector,
+            "quantity":          safe_float(cells[5]) if len(cells) > 5 else None,
+            "market_value_lakh": safe_float(cells[6]) if len(cells) > 6 else None,
+            "pct_nav":           safe_float(cells[7]) if len(cells) > 7 else None,
+        })
+
+    return ws.title, scheme_name, date_str, holdings
+
+
 def _parse_whiteoak_sheet(ws) -> tuple[str, str, str, list]:
     """WhiteOak layout: Row 0 col1=scheme_name; date via 'as on'.
     ISIN col auto-detected from header (col2 or col3 depending on variant)."""
@@ -802,6 +975,33 @@ def parse_file(filepath: Path, amc_key: str) -> dict | None:
                     "holdings":    result["holdings"],
                 })
         return {"amc": "ppfas", "date": global_date, "source": str(filepath.name), "schemes": schemes}
+
+    if amc_key == "mirae_manual":
+        ws = wb.active
+        sheet_code, scheme_name, date_str, holdings = _parse_mirae_sheet(ws)
+        if not holdings:
+            return None
+        return {"amc": "mirae", "date": date_str, "source": str(filepath.name),
+                "schemes": [{"sheet_code": sheet_code, "scheme_code": None,
+                              "scheme_name": scheme_name, "holdings": holdings}]}
+
+    if amc_key == "samco":
+        ws = wb.active
+        sheet_code, scheme_name, date_str, holdings = _parse_samco_sheet(ws)
+        if not holdings:
+            return None
+        return {"amc": "samco", "date": date_str, "source": str(filepath.name),
+                "schemes": [{"sheet_code": sheet_code, "scheme_code": None,
+                              "scheme_name": scheme_name, "holdings": holdings}]}
+
+    if amc_key == "helios":
+        ws = wb.active
+        sheet_code, scheme_name, date_str, holdings = _parse_helios_sheet(ws)
+        if not holdings:
+            return None
+        return {"amc": "helios", "date": date_str, "source": str(filepath.name),
+                "schemes": [{"sheet_code": sheet_code, "scheme_code": None,
+                              "scheme_name": scheme_name, "holdings": holdings}]}
 
     if amc_key == "axis":
         index = _read_serial_index(wb)

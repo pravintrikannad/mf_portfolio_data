@@ -52,6 +52,9 @@ AMC_PATTERNS = [
     (r"eee8616|invesco",      "invesco"),
     (r"navi",                 "navi"),
     (r"woc|whiteoak|white.oak", "whiteoak"),
+    (r"samco",                  "samco"),
+    (r"helios",                 "helios"),
+    (r"mirae",                  "mirae_manual"),
     (r"mahindra|manulife|b6705f83", "mahindra"),
     (r"axis.*port|fortnightly.*axis|monthly.*port.*26", "axis"),
 ]
@@ -90,7 +93,7 @@ def parse_and_commit(filepath: Path, amc_key: str):
     out_path = REPO_DIR / "data" / f"{amc_key}.json"
 
     # For AMCs delivered one-fund-per-file (Bandhan), merge into existing JSON
-    if amc_key in ("bandhan", "invesco", "navi", "whiteoak", "hdfc") and out_path.exists():
+    if amc_key in ("bandhan", "invesco", "navi", "whiteoak", "hdfc", "samco", "helios", "mirae_manual") and out_path.exists():
         try:
             existing = json.loads(out_path.read_text())
             existing_codes = {s["sheet_code"] for s in existing.get("schemes", [])}
