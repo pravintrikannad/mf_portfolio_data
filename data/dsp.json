@@ -6,7 +6,7 @@
     {
       "sheet_code": "LIQUID",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Liquidity Fund",
       "holdings": [
         {
           "isin": "INE115A07JW0",
@@ -1141,7 +1141,7 @@
     {
       "sheet_code": "ULTRA",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Ultra Short Fund",
       "holdings": [
         {
           "isin": "INE0JEI23010",
@@ -2044,7 +2044,7 @@
     {
       "sheet_code": "CREDITRISK",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Credit Risk Fund",
       "holdings": [
         {
           "isin": "INE0JEI23010",
@@ -2307,7 +2307,7 @@
     {
       "sheet_code": "LDF",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Low Duration Fund",
       "holdings": [
         {
           "isin": "INE403D08272",
@@ -3330,7 +3330,7 @@
     {
       "sheet_code": "SHORT",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Short Term Fund",
       "holdings": [
         {
           "isin": "INE403D08272",
@@ -3897,7 +3897,7 @@
     {
       "sheet_code": "STR",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Strategic Bond Fund",
       "holdings": [
         {
           "isin": "INE062A08421",
@@ -4064,7 +4064,7 @@
     {
       "sheet_code": "BOND",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Bond Fund",
       "holdings": [
         {
           "isin": "INE0JEI23010",
@@ -4255,7 +4255,7 @@
     {
       "sheet_code": "GILT",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Gilt Fund",
       "holdings": [
         {
           "isin": "IN0020250075",
@@ -4382,7 +4382,7 @@
     {
       "sheet_code": "SAVINGS",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Savings Fund",
       "holdings": [
         {
           "isin": "IN2220210271",
@@ -5365,7 +5365,7 @@
     {
       "sheet_code": "REGULARSAVINGS",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Regular Savings Fund",
       "holdings": [
         {
           "isin": "INE040A01034",
@@ -5836,7 +5836,7 @@
     {
       "sheet_code": "Corporate Bond",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Corporate Bond Fund",
       "holdings": [
         {
           "isin": "INE115A07PR7",
@@ -6267,7 +6267,7 @@
     {
       "sheet_code": "BANKING & PSU",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Banking and PSU Debt Fund",
       "holdings": [
         {
           "isin": "INE261F08EG3",
@@ -6802,7 +6802,7 @@
     {
       "sheet_code": "Income Plus Arbitrage FOF",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Income Plus Arbitrage Omni FoF",
       "holdings": [
         {
           "isin": "INF740K01ZW2",
@@ -6873,7 +6873,7 @@
     {
       "sheet_code": "10YGF",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP 10Y G-Sec Fund",
       "holdings": [
         {
           "isin": "IN0020250091",
@@ -6928,7 +6928,7 @@
     {
       "sheet_code": "LIQUIDETF",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP NIFTY 1D Rate Liquid ETF",
       "holdings": [
         {
           "isin": "DIRF",
@@ -6991,7 +6991,7 @@
     {
       "sheet_code": "OVERNIGHT",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Overnight Fund",
       "holdings": [
         {
           "isin": "IN002025X463",
@@ -7078,7 +7078,7 @@
     {
       "sheet_code": "FLOATER",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Floater Fund",
       "holdings": [
         {
           "isin": "INE296A07TM8",
@@ -7293,7 +7293,7 @@
     {
       "sheet_code": "Nifty SDL GSec 2028",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP NIFTY SDL PLUS G-SEC JUN 2028 30:70 INDEX FUND",
       "holdings": [
         {
           "isin": "IN0020070069",
@@ -7612,7 +7612,7 @@
     {
       "sheet_code": "CRISIL SDL GSec 2033",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP CRISIL-IBX 50:50 Gilt Plus SDL - April 2033 Index Fund",
       "holdings": [
         {
           "isin": "IN0020220060",
@@ -7771,7 +7771,7 @@
     {
       "sheet_code": "NIFTY SDL Gsec 2027",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty SDL Plus G-Sec Sep 2027 50:50 Index Fund",
       "holdings": [
         {
           "isin": "IN0020070069",
@@ -7914,7 +7914,7 @@
     {
       "sheet_code": "BSE Liquid Rate ETF",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP BSE Liquid Rate ETF",
       "holdings": [
         {
           "isin": "DIRF",
@@ -7977,7 +7977,7 @@
     {
       "sheet_code": "US Debt Passive FoF",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP US Specific Debt Passive FoF",
       "holdings": [
         {
           "isin": "IE00B3VWN518",
@@ -8040,7 +8040,7 @@
     {
       "sheet_code": "FMP Series 270-1172D",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "",
       "holdings": [
         {
           "isin": "IN2220220031",
@@ -8111,7 +8111,7 @@
     {
       "sheet_code": "FMP Series 268-1281D",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "",
       "holdings": [
         {
           "isin": "IN1020160017",
@@ -8230,7 +8230,7 @@
     {
       "sheet_code": "FMP Series 267-1172D",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "",
       "holdings": [
         {
           "isin": "IN2220220031",
@@ -8301,7 +8301,7 @@
     {
       "sheet_code": "SR 264 - 60M - 17D",
       "scheme_code": null,
-      "scheme_name": "DSP Debt ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "",
       "holdings": [
         {
           "isin": "IN2220160070",
@@ -8420,7 +8420,7 @@
     {
       "sheet_code": "Aggressive Hybrid",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Aggressive Hybrid Fund",
       "holdings": [
         {
           "isin": "INE040A01034",
@@ -9187,7 +9187,7 @@
     {
       "sheet_code": "Flexi Cap",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Flexi Cap Fund",
       "holdings": [
         {
           "isin": "INE090A01021",
@@ -9698,7 +9698,7 @@
     {
       "sheet_code": "Large Cap",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Large Cap Fund",
       "holdings": [
         {
           "isin": "INE040A01034",
@@ -9961,7 +9961,7 @@
     {
       "sheet_code": "Large & Mid Cap",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Large & Mid Cap Fund",
       "holdings": [
         {
           "isin": "INE090A01021",
@@ -10576,7 +10576,7 @@
     {
       "sheet_code": "TIGER",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP India T.I.G.E.R. Fund (The Infrastructure Growth and Economic Reforms Fund)",
       "holdings": [
         {
           "isin": "INE733E01010",
@@ -11103,7 +11103,7 @@
     {
       "sheet_code": "MIDCAP",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Mid Cap Fund",
       "holdings": [
         {
           "isin": "INE591G01025",
@@ -11598,7 +11598,7 @@
     {
       "sheet_code": "TAX",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP ELSS Tax Saver Fund",
       "holdings": [
         {
           "isin": "INE090A01021",
@@ -12077,7 +12077,7 @@
     {
       "sheet_code": "SMALLCAP",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Small Cap Fund",
       "holdings": [
         {
           "isin": "INE872H01027",
@@ -12732,7 +12732,7 @@
     {
       "sheet_code": "World Gold Mining FOF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP World Gold Mining Overseas Equity Omni FoF",
       "holdings": [
         {
           "isin": "LU0368252358",
@@ -12755,7 +12755,7 @@
     {
       "sheet_code": "NRNEF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Natural Resources & New Energy Fund",
       "holdings": [
         {
           "isin": "INE081A01020",
@@ -12962,7 +12962,7 @@
     {
       "sheet_code": "Global Clean Energy FOF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Global Clean Energy Overseas Equity Omni FoF",
       "holdings": [
         {
           "isin": "LU0534476519",
@@ -12977,7 +12977,7 @@
     {
       "sheet_code": "Focused",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Focused Fund",
       "holdings": [
         {
           "isin": "INE090A01021",
@@ -13216,7 +13216,7 @@
     {
       "sheet_code": "World Mining FOF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP World Mining Overseas Equity Omni FoF",
       "holdings": [
         {
           "isin": "LU0368260294",
@@ -13231,7 +13231,7 @@
     {
       "sheet_code": "US Specific Equity FoF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP US Specific Equity Omni FoF",
       "holdings": [
         {
           "isin": "LU0368250220",
@@ -13246,7 +13246,7 @@
     {
       "sheet_code": "DAAF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Dynamic Asset Allocation Fund",
       "holdings": [
         {
           "isin": "INE090A01021",
@@ -13941,7 +13941,7 @@
     {
       "sheet_code": "ESF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Equity Savings Fund",
       "holdings": [
         {
           "isin": "INE040A01034",
@@ -14868,7 +14868,7 @@
     {
       "sheet_code": "EQUALNIFTY50",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty 50 Equal Weight Index Fund",
       "holdings": [
         {
           "isin": "INE423A01024",
@@ -15275,7 +15275,7 @@
     {
       "sheet_code": "ARBITRAGE",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Arbitrage Fund",
       "holdings": [
         {
           "isin": "INE040A01034",
@@ -16594,7 +16594,7 @@
     {
       "sheet_code": "HEALTHCARE",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Healthcare Fund",
       "holdings": [
         {
           "isin": "INE044A01036",
@@ -16849,7 +16849,7 @@
     {
       "sheet_code": "NIFTY50INDEX",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty 50 Index Fund",
       "holdings": [
         {
           "isin": "INE040A01034",
@@ -17256,7 +17256,7 @@
     {
       "sheet_code": "QUANT",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Quant Fund",
       "holdings": [
         {
           "isin": "INE040A01034",
@@ -17591,7 +17591,7 @@
     {
       "sheet_code": "Nifty 50 Equal ETF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty 50 Equal Weight ETF",
       "holdings": [
         {
           "isin": "INE423A01024",
@@ -17998,7 +17998,7 @@
     {
       "sheet_code": "Nifty 50 ETF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP NIFTY 50 ETF",
       "holdings": [
         {
           "isin": "INE040A01034",
@@ -18405,7 +18405,7 @@
     {
       "sheet_code": "Midcap 150 Quality 50 ETF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP NIFTY MIDCAP 150 QUALITY 50 ETF",
       "holdings": [
         {
           "isin": "INE259A01022",
@@ -18812,7 +18812,7 @@
     {
       "sheet_code": "NIFTY MIDCAP 150 Q50",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty Midcap 150 Qlty 50 Index Fund",
       "holdings": [
         {
           "isin": "INE259A01022",
@@ -19219,7 +19219,7 @@
     {
       "sheet_code": "Nifty Bank ETF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP NIFTY BANK ETF",
       "holdings": [
         {
           "isin": "INE040A01034",
@@ -19338,7 +19338,7 @@
     {
       "sheet_code": "Nifty IT ETF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP NIFTY IT ETF",
       "holdings": [
         {
           "isin": "INE009A01021",
@@ -19425,7 +19425,7 @@
     {
       "sheet_code": "BSE Sensex ETF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP BSE SENSEX ETF",
       "holdings": [
         {
           "isin": "INE040A01034",
@@ -19672,7 +19672,7 @@
     {
       "sheet_code": "Nifty PSU Bank ETF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP NIFTY PSU BANK ETF",
       "holdings": [
         {
           "isin": "INE062A01020",
@@ -19775,7 +19775,7 @@
     {
       "sheet_code": "Nifty Private Bank ETF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty Private Bank ETF",
       "holdings": [
         {
           "isin": "INE238A01034",
@@ -19862,7 +19862,7 @@
     {
       "sheet_code": "GOLD ETF FOF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Gold ETF Fund of Fund",
       "holdings": [
         {
           "isin": "INF740KA1SW3",
@@ -19877,7 +19877,7 @@
     {
       "sheet_code": "Banking and Financial Services",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Banking & Financial Services Fund",
       "holdings": [
         {
           "isin": "INE090A01021",
@@ -20148,7 +20148,7 @@
     {
       "sheet_code": "Nifty Smallcap250 Quality 50",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty Smallcap250 Quality 50 Index Fund",
       "holdings": [
         {
           "isin": "INE596I01020",
@@ -20555,7 +20555,7 @@
     {
       "sheet_code": "Multicap Fund",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Multicap Fund",
       "holdings": [
         {
           "isin": "INE040A01034",
@@ -21066,7 +21066,7 @@
     {
       "sheet_code": "Healthcare ETF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty Healthcare ETF",
       "holdings": [
         {
           "isin": "INE044A01036",
@@ -21233,7 +21233,7 @@
     {
       "sheet_code": "Nifty Bank Index",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty Bank Index Fund",
       "holdings": [
         {
           "isin": "INE040A01034",
@@ -21352,7 +21352,7 @@
     {
       "sheet_code": "Nifty Top 10 Equal",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty Top 10 Equal Weight Index Fund",
       "holdings": [
         {
           "isin": "INE018A01030",
@@ -21439,7 +21439,7 @@
     {
       "sheet_code": "Nifty Top 10 Equal ETF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty Top 10 Equal Weight ETF",
       "holdings": [
         {
           "isin": "INE018A01030",
@@ -21526,7 +21526,7 @@
     {
       "sheet_code": "Business Cycle Fund",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Business Cycle Fund",
       "holdings": [
         {
           "isin": "INE040A01034",
@@ -21957,7 +21957,7 @@
     {
       "sheet_code": "Sensex Next 30 ETF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP BSE Sensex Next 30 ETF",
       "holdings": [
         {
           "isin": "INE038A01020",
@@ -22204,7 +22204,7 @@
     {
       "sheet_code": "Sensex Next 30 Index",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP BSE Sensex Next 30 Index Fund",
       "holdings": [
         {
           "isin": "INE038A01020",
@@ -22451,7 +22451,7 @@
     {
       "sheet_code": "Nifty Pvt Bank Index",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty Private Bank Index Fund",
       "holdings": [
         {
           "isin": "INE238A01034",
@@ -22538,7 +22538,7 @@
     {
       "sheet_code": "Silver ETF FOF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Silver ETF Fund of Fund",
       "holdings": [
         {
           "isin": "INF740KA1RE3",
@@ -22553,7 +22553,7 @@
     {
       "sheet_code": "Nifty Healthcare Index",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty Healthcare Index Fund",
       "holdings": [
         {
           "isin": "INE044A01036",
@@ -22720,7 +22720,7 @@
     {
       "sheet_code": "Nifty IT Index",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty IT Index Fund",
       "holdings": [
         {
           "isin": "INE009A01021",
@@ -22807,7 +22807,7 @@
     {
       "sheet_code": "Nifty500 Flexicap Qlty30",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty500 Flexicap Quality 30 Index Fund",
       "holdings": [
         {
           "isin": "INE239A01024",
@@ -23054,7 +23054,7 @@
     {
       "sheet_code": "Nifty500 Flexicap Qlty30 ETF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty500 Flexicap Quality 30 ETF",
       "holdings": [
         {
           "isin": "INE239A01024",
@@ -23301,7 +23301,7 @@
     {
       "sheet_code": "Nifty Midcap 150 Index",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty Midcap 150 Index Fund",
       "holdings": [
         {
           "isin": "INE118H01025",
@@ -24508,7 +24508,7 @@
     {
       "sheet_code": "Nifty Smallcap 250 ETF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty Smallcap 250 ETF",
       "holdings": [
         {
           "isin": "INE036D01028",
@@ -26515,7 +26515,7 @@
     {
       "sheet_code": "Nifty Smallcap 250 Index",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty Smallcap 250 Index Fund",
       "holdings": [
         {
           "isin": "INE036D01028",
@@ -28522,7 +28522,7 @@
     {
       "sheet_code": "Nifty Midcap 150 ETF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty Midcap 150 ETF",
       "holdings": [
         {
           "isin": "INE118H01025",
@@ -29729,7 +29729,7 @@
     {
       "sheet_code": "BSE Top 10 Banks ETF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP BSE Top 10 Banks ETF",
       "holdings": [
         {
           "isin": "INE040A01034",
@@ -29816,7 +29816,7 @@
     {
       "sheet_code": "Multi Asset",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Multi Asset Allocation Fund",
       "holdings": [
         {
           "isin": "INE040A01034",
@@ -30535,7 +30535,7 @@
     {
       "sheet_code": "Multi Asset Omni Fund of Funds",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Multi Asset Omni Fund of Funds",
       "holdings": [
         {
           "isin": "INF740K01NF3",
@@ -30638,7 +30638,7 @@
     {
       "sheet_code": "NIFTYNEXT50INDEX",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty Next 50 Index Fund",
       "holdings": [
         {
           "isin": "INE814H01029",
@@ -31077,7 +31077,7 @@
     {
       "sheet_code": "MSCI India ETF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP MSCI India ETF",
       "holdings": [
         {
           "isin": "INE040A01034",
@@ -32428,7 +32428,7 @@
     {
       "sheet_code": "Nifty 500 Index",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty 500 Index Fund",
       "holdings": [
         {
           "isin": "INE040A01034",
@@ -36467,7 +36467,7 @@
     {
       "sheet_code": "Nifty Next 50 ETF",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Nifty Next 50 ETF",
       "holdings": [
         {
           "isin": "INE814H01029",
@@ -36906,7 +36906,7 @@
     {
       "sheet_code": "VALUE",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Value Fund",
       "holdings": [
         {
           "isin": "INE397D01024",
@@ -37497,7 +37497,7 @@
     {
       "sheet_code": "Global Innovation",
       "scheme_code": null,
-      "scheme_name": "DSP Equity ISIN Portfolio as on 30 Apr 2026",
+      "scheme_name": "DSP Global Innovation Overseas Equity Omni FoF",
       "holdings": [
         {
           "isin": "LU1793346666",

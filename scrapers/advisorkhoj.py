@@ -124,7 +124,7 @@ AMC_REGISTRY = {
     },
     "360one": {
         "slug": "360-ONE-Mutual-Fund",
-        "layout": "nippon",   # col0=serial, col1=ISIN, col2=name — same as Sundaram/Nippon
+        "layout": "std",   # col0=code, col1=name, col2=ISIN
     },
 }
 
@@ -718,10 +718,13 @@ def fetch_amc(amc_key: str) -> Optional[dict]:
             if date_str and not global_date:
                 global_date = date_str
 
-            # scheme_name: prefer Index sheet → per-fund filename → extract from sheet content
+            # scheme_name: prefer Index sheet → extract from sheet content
+            # Use filename only when the workbook is a per-fund file (≤2 sheets),
+            # not when it's a multi-fund consolidated file (e.g. DSP)
+            is_per_fund_file = len(workbooks) > 1 and len(wb.sheetnames) <= 2
             scheme_name = (index.get(sheet_name)
-                           or (fname_scheme if len(workbooks) > 1 else "")
-                           or _extract_sheet_scheme_name(ws))
+                           or _extract_sheet_scheme_name(ws)
+                           or (fname_scheme if is_per_fund_file else ""))
             all_schemes.append({
                 "sheet_code":   sheet_name,
                 "scheme_code":  None,          # resolved server-side via scheme name match
